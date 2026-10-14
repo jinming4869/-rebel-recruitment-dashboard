@@ -1,0 +1,1 @@
+dispute_id,sdm_movement_id,movement_name,country,gwno,claim_start_year,info_stratum,coercion_stratum,escalation_stratum,cell,frame_size_in_cell,draw_order,selection_probability,rng_seed,frame_sha256,status,replacement_for,replacement_reason,drawn_at_utc

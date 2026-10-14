@@ -1,0 +1,26 @@
+source_id,kind,citation,doi_or_url,version,pin_cite,verify_pin,unit,temporal_coverage,role_in_study,download_url,download_date,original_filename,sha256,terms_of_use,status,notes
+LIT_FL2003,publication,"Fearon & Laitin 2003, APSR 97(1):75-90",https://doi.org/10.1017/S0003055403000534,,,FALSE,country-year,1945-1999,baseline-weakness anchor,,,,,,cited_unverified,
+LIT_F2010,publication,"Fearon 2010, WDR 2011 background paper",https://documents1.worldbank.org/curated/en/119531468181479612/pdf/620090WP0Gover0BOX0361475B00PUBLIC0.pdf,,pp.40-42,TRUE,,,information/commitment/opposition-error precedent,,,,,,cited_unverified,pin cite from protocol; host unreachable from build env
+LIT_BCW2017,publication,"Beardsley, Cunningham & White 2017, BJPolS",https://doi.org/10.1017/S0007123415000307,,p.677,TRUE,,,underestimation->low offer precedent,,,,,,cited_unverified,pin cite from protocol
+LIT_C2013,publication,"Cunningham 2013, AJPS",https://doi.org/10.1111/ajps.12003,,,FALSE,,,fragmentation rival,,,,,,cited_unverified,
+LIT_BG2019,publication,"Bartusevicius & Gleditsch 2019, IO 73(1):225-248",https://doi.org/10.1017/S0020818318000425,,,FALSE,,,stage-splitting predecessor,,,,,,cited_unverified,
+LIT_GS2021,publication,"Germann & Sambanis 2021, IO 75(1):178-203",https://doi.org/10.1017/S0020818320000557,,,FALSE,,,exclusion/lost-autonomy confounders,,,,,,cited_unverified,
+LIT_W2006,publication,"Walter 2006, AJPS",https://doi.org/10.1111/j.1540-5907.2006.00186.x,,,FALSE,,,reputation rival,,,,,,cited_unverified,
+LIT_W2007,publication,"Walter 2007, APSA-CP Newsletter 18(2)",https://connect.apsanet.org/wp-content/uploads/sites/9/2017/06/2007-summer.pdf,,,FALSE,,,weak-state reputation/commitment,,,,,,cited_unverified,
+LIT_G2015,publication,"Grigoryan 2015, IS 39(4):170-207",https://doi.org/10.1162/ISEC_a_00200,,,FALSE,,,commitment rival,,,,,,cited_unverified,
+LIT_TRW2016,publication,"Thomas, Reed & Wolford 2016, IO 70(3):477-511",https://doi.org/10.1017/S0020818316000175,,,FALSE,,,rebel-strategy rival,,,,,,cited_unverified,
+LIT_MS2021,publication,"Malone & Spaniel 2021, R&P 8(1)",https://doi.org/10.1177/2053168021993971,,,FALSE,,,cautious-offer counterexample,,,,,,cited_unverified,
+LIT_Y2021,publication,"Ying 2021, JCR 65(2-3):506-533",https://doi.org/10.1177/0022002720957063,,,FALSE,,,state-penetration rival,,,,,,cited_unverified,
+LIT_LR2026,publication,"Lewis & Rangazas 2026, PoP 24(S1)",https://doi.org/10.1017/S1537592725102065,,,FALSE,,,scope limitation,,,,,,cited_unverified,
+LIT_M2022,publication,"Malone 2022, ISQ 66(3)",https://doi.org/10.1093/isq/sqac050,,,FALSE,,,post-formation armed groups (linkage only),,,,,,cited_unverified,
+LIT_BGLT2020,publication,"Brambor et al. 2020, CPS",https://doi.org/10.1177/0010414019843432,,,FALSE,,,ICI definition,,,,,,cited_unverified,
+DATA_SDM,dataset,"Sambanis, Germann & Schadel 2018, JCR 62(3):656-686",https://doi.org/10.1177/0022002717735364,public 1.0,,FALSE,movement-year,1945-2012,risk-set denominator,https://michagermann.github.io/data/sdm/ ; mirror https://researchdata.bath.ac.uk/552/,,,,cite paper per authors,pending_download,host blocked in build env; verify govt-response subsample + weights in codebook
+DATA_SDM2,dataset,Germann SDM 2.0 author page,https://michagermann.github.io/data/sdm2/,2.0 (announced),,FALSE,movement-year,to 2020,optional extension,,,,,,access_request_optional,baseline must not depend on it
+DATA_GEOSDM,dataset,GeoSDM (Germann et al.),https://michagermann.github.io/data/sdm/,,,FALSE,movement territory,1945-2012,claimed-territory polygons for local K and S coding,,,,,,pending_download,optional
+DATA_UCDP_ACD,dataset,UCDP/PRIO Armed Conflict Dataset,https://ucdp.uu.se/downloads/,26.1,,FALSE,conflict-year,1946-2025,threshold stage,,,,,CC BY 4.0 (verify),pending_download,
+DATA_UCDP_DYAD,dataset,UCDP Dyadic Dataset,https://ucdp.uu.se/downloads/,26.1,,FALSE,dyad-year,1946-2025,actor linkage,,,,,CC BY 4.0 (verify),pending_download,
+DATA_UCDP_ONSET,dataset,UCDP Conflict Onset Dataset (intrastate),https://ucdp.uu.se/downloads/,25.1,,FALSE,country-year,1946-2024,onset series (reconcile vs 26.1),,,,,CC BY 4.0 (verify),pending_download,reconcile IDs/dates with ACD 26.1 before use
+DATA_SRDP,dataset,"Cunningham et al. 2025, JPR 62 (SRDP update)",https://doi.org/10.1177/00223433241267866,2025 update,,FALSE,organization-year,1960-2020,auxiliary tactic timing,,,,,,pending_download,never a denominator
+DATA_ICI,dataset,Brambor et al. Information Capacity Index,https://doi.org/10.1177/0010414019843432,,,FALSE,country-year,,pilot stratifier (after validation),,,,,,pending_download,national admin capacity; not challenger intelligence
+DATA_PAX,dataset,PA-X Peace Agreements Database,https://www.peaceagreements.org/downloads/,10,,FALSE,agreement,,context only (concluded agreements),,,,,,optional,does not record rejected first offers
+DATA_GDPPC,dataset,Lagged GDP per capita (source TBD by PI: PWT / Maddison / WDI),,,,FALSE,country-year,,baseline weakness W,,,,,,pi_decision_needed,

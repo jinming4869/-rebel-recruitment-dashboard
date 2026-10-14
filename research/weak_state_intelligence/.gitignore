@@ -1,0 +1,6 @@
+# Raw sources are frozen by SHA-256 in ledgers/source_registry.csv; not redistributed here (terms of use).
+data/raw/*
+!data/raw/.gitkeep
+data/derived/*
+!data/derived/.gitkeep
+__pycache__/

@@ -1,0 +1,57 @@
+{
+  "_doc": "Logical-name -> raw-column map for each frozen source. Every block starts confirmed=false: column names are from memory/documentation and MUST be checked against the downloaded codebook (run `python -I src/inspect_source.py <file>`). Build scripts refuse to run on an unconfirmed block, so a wrong guess fails loudly instead of silently producing numbers.",
+  "DATA_SDM": {
+    "confirmed": false,
+    "file_glob": "data/raw/DATA_SDM/*.csv",
+    "columns": {
+      "movement_id": "sdmid",
+      "movement_name": "sdmname",
+      "country_code": "gwid",
+      "country_name": "statename",
+      "year": "year",
+      "anti_state_violence": "violence",
+      "claim_active": null,
+      "govt_response_subsample": null,
+      "sample_weight": null
+    },
+    "notes": "claim_active: if null, a movement-year row is taken to mean the claim is active. Government-response subsample flag and weights must be identified from the SDM codebook before any response-stage figure is reported."
+  },
+  "DATA_UCDP_ACD": {
+    "confirmed": false,
+    "file_glob": "data/raw/DATA_UCDP_ACD/*.csv",
+    "columns": {
+      "conflict_id": "conflict_id",
+      "year": "year",
+      "type_of_conflict": "type_of_conflict",
+      "incompatibility": "incompatibility",
+      "gwno": "gwno_a",
+      "side_b": "side_b",
+      "side_b_id": "side_b_id",
+      "territory_name": "territory_name",
+      "start_date": "start_date",
+      "start_date2": "start_date2"
+    },
+    "intrastate_types": [3, 4]
+  },
+  "DATA_UCDP_DYAD": {
+    "confirmed": false,
+    "file_glob": "data/raw/DATA_UCDP_DYAD/*.csv",
+    "columns": {"dyad_id": "dyad_id", "conflict_id": "conflict_id", "year": "year", "side_b": "side_b", "side_b_id": "side_b_id"}
+  },
+  "DATA_UCDP_ONSET": {
+    "confirmed": false,
+    "file_glob": "data/raw/DATA_UCDP_ONSET/*.csv",
+    "columns": {"gwno": "gwno_a", "year": "year", "conflict_ids": "conflict_ids", "new_conflict_onset": "onset1"},
+    "notes": "Onset-file column names are the least certain of all; confirm before reconciliation."
+  },
+  "DATA_GDPPC": {
+    "confirmed": false,
+    "file_glob": "data/raw/DATA_GDPPC/*.csv",
+    "columns": {"country_code": "gwno", "year": "year", "gdppc": "gdppc"}
+  },
+  "DATA_ICI": {
+    "confirmed": false,
+    "file_glob": "data/raw/DATA_ICI/*.csv",
+    "columns": {"country_code": "gwno", "year": "year", "ici": "ici"}
+  }
+}

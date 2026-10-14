@@ -1,0 +1,164 @@
+{
+  "_doc": "Column contracts for every submission ledger (Protocol 'Required submission package' and App. B). Key 'enums' maps column -> codes.json vocabulary.",
+  "pilot_sampling.csv": {
+    "columns": [
+      "dispute_id",
+      "sdm_movement_id",
+      "movement_name",
+      "country",
+      "gwno",
+      "claim_start_year",
+      "info_stratum",
+      "coercion_stratum",
+      "escalation_stratum",
+      "cell",
+      "frame_size_in_cell",
+      "draw_order",
+      "selection_probability",
+      "rng_seed",
+      "frame_sha256",
+      "status",
+      "replacement_for",
+      "replacement_reason",
+      "drawn_at_utc"
+    ],
+    "enums": {
+      "status": "pilot_status"
+    },
+    "required": [
+      "dispute_id",
+      "cell",
+      "selection_probability",
+      "rng_seed",
+      "status"
+    ]
+  },
+  "archival_search_log.csv": {
+    "columns": [
+      "search_id",
+      "dispute_id",
+      "repository",
+      "collection",
+      "query_string",
+      "language",
+      "date_range_searched",
+      "searched_on",
+      "searcher",
+      "result",
+      "n_documents",
+      "access_restriction",
+      "notes"
+    ],
+    "enums": {
+      "result": "search_result"
+    },
+    "required": [
+      "search_id",
+      "dispute_id",
+      "repository",
+      "query_string",
+      "searched_on",
+      "result"
+    ]
+  },
+  "belief_offer_event_ledger.csv": {
+    "columns": [
+      "row_id",
+      "dispute_id",
+      "stage",
+      "event_date",
+      "date_precision",
+      "awareness",
+      "first_response",
+      "challenger_response",
+      "violence_24m",
+      "input_component",
+      "input_level",
+      "belief_construct",
+      "belief_quote",
+      "belief_ordinal",
+      "belief_uncertainty",
+      "benchmark_low",
+      "benchmark_high",
+      "benchmark_source_ids",
+      "belief_vs_benchmark",
+      "offer_terms",
+      "offer_authority",
+      "offer_implementable",
+      "acceptance_benchmark",
+      "acceptable_terms_quote",
+      "local_forces_pre_offer",
+      "k_level_pre_offer",
+      "rival_flags",
+      "s_shock_date",
+      "doc_repository",
+      "doc_collection",
+      "doc_file_page",
+      "doc_author",
+      "doc_recipient",
+      "doc_language",
+      "doc_audience",
+      "contemporaneity",
+      "translation_status",
+      "access_restriction",
+      "search_id",
+      "coder",
+      "coder_confidence",
+      "second_coder",
+      "adjudication",
+      "missing_reason"
+    ],
+    "enums": {
+      "awareness": "stage2_awareness",
+      "first_response": "stage3_first_response",
+      "challenger_response": "stage4_challenger_response",
+      "violence_24m": "stage5_violence_24m",
+      "input_component": "input_quality_component",
+      "input_level": "input_quality_level",
+      "belief_construct": "belief_construct",
+      "belief_vs_benchmark": "belief_vs_benchmark",
+      "offer_authority": "offer_authority",
+      "offer_implementable": "offer_implementable",
+      "acceptance_benchmark": "acceptance_benchmark",
+      "doc_audience": "document_audience",
+      "contemporaneity": "contemporaneity",
+      "coder_confidence": "coder_confidence",
+      "k_level_pre_offer": "input_quality_level"
+    },
+    "required": [
+      "row_id",
+      "dispute_id",
+      "stage",
+      "coder",
+      "coder_confidence"
+    ]
+  },
+  "movement_actor_crosswalk.csv": {
+    "columns": [
+      "crosswalk_id",
+      "sdm_movement_id",
+      "movement_name",
+      "organization_name",
+      "aliases",
+      "srdp_org_id",
+      "ucdp_conflict_id",
+      "ucdp_dyad_id",
+      "ucdp_side_b_id",
+      "valid_from",
+      "valid_to",
+      "match_confidence",
+      "evidence",
+      "reviewer",
+      "reviewed_on"
+    ],
+    "enums": {
+      "match_confidence": "actor_match_confidence"
+    },
+    "required": [
+      "crosswalk_id",
+      "sdm_movement_id",
+      "match_confidence",
+      "reviewer"
+    ]
+  }
+}

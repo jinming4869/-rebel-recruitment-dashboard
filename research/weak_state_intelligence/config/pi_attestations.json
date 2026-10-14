@@ -1,0 +1,6 @@
+{
+  "_doc": "Judgements the protocol reserves for the PI. gates.py will not pass a gate whose attestation is null. Each entry: {\"value\": true|false, \"by\": name, \"date\": ISO, \"evidence\": ledger rows / files}.",
+  "gate_iii_comparable_threat": null,
+  "gate_iv_bounds_acceptable": null,
+  "gate_v_collection_plan_feasible": null
+}
