@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import LEDGERS, RAW, sha256  # noqa: E402
 
 
-def _record(source_id: str, path: Path, url: str) -> None:
+def _record(source_id: str, path: Path, url: str, version: str = "", note: str = "") -> None:
     reg_path = LEDGERS / "source_registry.csv"
     reg = pd.read_csv(reg_path, dtype=str, keep_default_na=False)
     if source_id not in set(reg["source_id"]):
@@ -34,6 +34,10 @@ def _record(source_id: str, path: Path, url: str) -> None:
     reg.loc[i, "original_filename"] = path.name
     reg.loc[i, "sha256"] = sha256(path)
     reg.loc[i, "status"] = "frozen"
+    if version:
+        reg.loc[i, "version"] = version
+    if note and note not in reg.loc[i, "notes"]:
+        reg.loc[i, "notes"] = (reg.loc[i, "notes"] + " | " if reg.loc[i, "notes"] else "") + note
     reg.to_csv(reg_path, index=False)
     print(f"{source_id}: frozen {path.name} sha256={reg.loc[i, 'sha256']}")
 
@@ -62,6 +66,9 @@ def main() -> None:
     r = sub.add_parser("register")
     r.add_argument("source_id")
     r.add_argument("path", type=Path)
+    r.add_argument("--url", default="", help="original upstream URL of the file")
+    r.add_argument("--version", default="")
+    r.add_argument("--note", default="", help="provenance note, e.g. handoff release and its SHA-256")
     a = ap.parse_args()
 
     if a.cmd == "download":
@@ -73,7 +80,7 @@ def main() -> None:
         _record(a.source_id, dest, a.url)
     else:
         dest = _place(a.source_id, a.path)
-        _record(a.source_id, dest, f"manual:{a.path.name}")
+        _record(a.source_id, dest, a.url or f"manual:{a.path.name}", a.version, a.note)
 
 
 if __name__ == "__main__":

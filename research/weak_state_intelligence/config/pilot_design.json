@@ -2,13 +2,27 @@
   "_doc": "Frozen BEFORE any archive is inspected (Protocol Week 3). Changing anything here after the draw requires a logged amendment in docs/amendments.md.",
   "rng_seed": 20261014,
   "n_total": 24,
-  "entry_window": [1960, 2012],
+  "entry_window": [
+    1960,
+    2012
+  ],
   "exclude_left_truncated": true,
-  "info_proxy": {"source": "DATA_ICI", "column": "ici", "lag_years": 1, "split": "median_of_frame"},
-  "coercion_proxy": {"source": "PI_DECISION_NEEDED", "column": "local_coercion_proxy", "lag_years": 1, "split": "median_of_frame",
-                     "note": "No public dataset measures locally deployable coercion. Candidates: national military personnel per capita (NMC) or a GeoSDM-territory distance-to-capital/garrison proxy. PI must choose and document before the draw."},
+  "info_proxy": {
+    "source": "DATA_ICI",
+    "column": "ici",
+    "lag_years": 1,
+    "split": "median_of_frame"
+  },
+  "coercion_proxy": {
+    "source": "PI_DECISION_NEEDED",
+    "column": "local_coercion_proxy",
+    "lag_years": 1,
+    "split": "median_of_frame",
+    "note": "No public dataset measures locally deployable coercion. Candidates: national military personnel per capita (NMC) or a GeoSDM-territory distance-to-capital/garrison proxy. PI must choose and document before the draw."
+  },
   "escalation_definition": "exit_type == 'violence' within the SDM window",
   "cells": "info{high,low} x coercion{high,low} x escalation{escalating,non_escalating} = 8 cells",
   "allocation": "equal (3 per cell); a cell with fewer eligible disputes contributes all of them and the shortfall is reassigned one at a time to the cell with the largest remaining frame, ties broken by cell name",
-  "replacement_rule": "Only for documented inaccessibility recorded in archival_search_log.csv (result=access_denied for all planned repositories). Replacement = next unselected dispute in the pre-drawn random order of the same cell. Original row stays with status=unavailable."
+  "replacement_rule": "Only for documented inaccessibility recorded in archival_search_log.csv (result=access_denied for all planned repositories). Replacement = next unselected dispute in the pre-drawn random order of the same cell. Original row stays with status=unavailable.",
+  "status_2026_10_14": "Not run. Superseded for the pilot phase by config/pilot_frames.json (structured within-country frames). If a global draw is later needed, provisional strata could use Hanson-Sigman infcap/milpercap, but outputs/provisional_strata_support.csv shows 0-1 escalating episodes in high-infcap cells."
 }

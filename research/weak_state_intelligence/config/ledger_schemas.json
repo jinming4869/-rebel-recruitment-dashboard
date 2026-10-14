@@ -160,5 +160,38 @@
       "match_confidence",
       "reviewer"
     ]
+  },
+  "archive_leads.csv": {
+    "columns": [
+      "lead_id",
+      "frame_id",
+      "episode_id",
+      "claimant_org",
+      "document",
+      "doc_date",
+      "author",
+      "recipient",
+      "repository",
+      "locator",
+      "lead_status",
+      "verified_by",
+      "chain_links",
+      "can_show",
+      "cannot_show",
+      "next_step",
+      "priority"
+    ],
+    "enums": {
+      "lead_status": "lead_status"
+    },
+    "required": [
+      "lead_id",
+      "frame_id",
+      "document",
+      "repository",
+      "lead_status",
+      "chain_links",
+      "next_step"
+    ]
   }
 }

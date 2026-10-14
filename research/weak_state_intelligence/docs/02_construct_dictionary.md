@@ -8,9 +8,9 @@ Notation follows Protocol Appendix A. Unit: **government–challenger–month** 
 
 | Construct | Definition | Source | Rule |
 |---|---|---|---|
-| **Eligible claimant** | An SDM movement with an independently recorded organized demand, observed before any anti-state violence. | SDM (Sambanis et al. 2018) | Entry = first independently recorded demand year (month where available). Exit = first anti-state violence, claim termination, or right-censoring (2012 for public SDM). |
+| **Eligible claimant episode** | An SDM movement **phase** under one host government (`primary_first_claim`: phase 1, `prioract==0`, claim start = first active year, not violent in the claim year). Inherited, resumed, and violent-in-claim-year episodes are separate populations. | SDM (Sambanis et al. 2018) | Entry = first `active==1` year of the phase (never the inactive lookback row). Exit = first `violsd==1` year, claim end (`enddate`), host change (`8888`), or right-censoring at 2012. See `src/build_risk_set.py`. |
 | **Clock start (t₀)** | Date of the independently observed demand. | SDM, then archives | **Never** UCDP onset, government awareness, or first negotiation. Selecting on awareness selects on treatment. |
-| **Y₂₄** | First anti-state organized armed action in (t₀, t₀+24 months]. | Archives, UCDP, SRDP | Distinct from crossing the UCDP 25-death threshold, which is recorded separately. |
+| **Y₂₄** | First anti-state organized armed action in (t₀, t₀+24 months]. | Archives, UCDP, SRDP | Distinct from crossing the UCDP 25-death threshold, which is recorded separately. With annual SDM data it is **bounded**: lower = violence by t₀+1, upper = by t₀+2. |
 | **UCDP threshold** | ≥25 battle-related deaths in a calendar year in a state-based conflict. | UCDP ACD/Dyadic 26.1 | A separate later stage. Not a bargaining outcome. |
 
 ## B. Treatment and mechanism links

@@ -1,0 +1,121 @@
+sdm_ccode,sdm_country,qog_ccodecow,qog_names,active_years,n_active_years,years_matched,years_with_wdi_gdp,match_status,override
+2,United States,2,United States of America (the),1945-2012,68,68,53,matched,False
+20,Canada,20,Canada,1945-2012,68,68,53,matched,False
+52,Trinidad & Tobago,52,Trinidad and Tobago,1970-2012,43,43,43,matched,False
+58,Antigua & Barbuda,58,Antigua and Barbuda,1981-2012,32,32,31,matched,False
+60,St. Kitts and Nevis,60,Saint Kitts and Nevis,1983-2012,30,30,29,matched,False
+70,Mexico,70,Mexico,1945-2012,68,68,53,matched,False
+80,Belize,80,Belize,1995-2012,18,18,18,matched,False
+90,Guatemala,90,Guatemala,1991-2012,22,22,22,matched,False
+91,Honduras,91,Honduras,1976-2012,37,37,37,matched,False
+92,El Salvador,92,El Salvador,1959-2012,54,54,48,matched,False
+93,Nicaragua,93,Nicaragua,1974-2012,39,39,39,matched,False
+95,Panama,95,Panama,1945-2012,68,68,53,matched,False
+100,Colombia,100,Colombia,1960-2012,53,53,53,matched,False
+101,Venezuela,101,Venezuela (Bolivarian Republic of),1972-2012,41,41,41,matched,False
+115,Suriname,115,Suriname,1976-2012,37,37,37,matched,False
+130,Ecuador,130,Ecuador,1964-2012,49,49,49,matched,False
+135,Peru,135,Peru,1980-2012,33,33,33,matched,False
+140,Brazil,140,Brazil,1970-2012,43,43,43,matched,False
+145,Bolivia,145,Bolivia (Plurinational State of),1952-2012,61,61,53,matched,False
+150,Paraguay,150,Paraguay,1975-2012,38,38,38,matched,False
+155,Chile,155,Chile,1978-2012,35,35,35,matched,False
+160,Argentina,160,Argentina,1970-2012,43,43,43,matched,False
+200,United Kingdom,200,United Kingdom of Great Britain and Northern Ireland (the),1945-2012,68,68,53,matched,False
+210,Netherlands,210,Netherlands (the),1962-2012,51,51,51,matched,False
+211,Belgium,211,Belgium,1954-2012,59,59,53,matched,False
+220,France,220,France,1946-2012,60,60,50,matched,False
+225,Switzerland,225,Switzerland,1947-2012,66,66,53,matched,False
+230,Spain,230,Spain,1945-2012,68,68,53,matched,False
+235,Portugal,235,Portugal,1974-2000,27,27,27,matched,False
+290,Poland,290,Poland,1990-2012,23,23,23,matched,False
+305,Austria,305,Austria,1979-2004,26,26,26,matched,False
+315,Czechoslovakia,315,Czechoslovakia,1945-1992,34,34,0,matched,False
+316,Czech Republic,316,Czechia,1993-2012,20,20,20,matched,False
+317,Slovakia,317,Slovakia,1993-2012,20,20,20,matched,False
+325,Italy,325,Italy,1945-2012,68,68,53,matched,False
+339,Albania,339,Albania,1990-2012,23,23,23,matched,False
+341,Montenegro,341,Montenegro,2006-2012,7,7,7,matched,False
+343,Macedonia,343,North Macedonia,1991-2012,22,22,20,matched,False
+344,Croatia,344,Croatia,1991-2012,22,22,21,matched,False
+345,Yugoslavia,345,Yugoslavia,1945-2012,68,68,0,matched,False
+346,Bosnia,346,Bosnia and Herzegovina,1992-2012,21,21,21,matched,False
+352,Cyprus,352,Cyprus,1961-2012,52,52,38,matched,False
+359,Moldova,359,Moldova (the Republic of),1991-2012,22,22,21,matched,False
+360,Romania,360,Romania,1990-2012,23,23,23,matched,False
+365,Russia (USSR),365,Russian Federation (the),1945-2012,68,68,21,matched,False
+366,Estonia,366,Estonia,1991-2003,13,13,12,matched,False
+368,Lithuania,368,Lithuania,1991-2012,22,22,21,matched,False
+369,Ukraine,369,Ukraine,1991-2012,22,22,21,matched,False
+372,Georgia,372,Georgia,1991-2012,22,22,21,matched,False
+373,Azerbaijan,373,Azerbaijan,1991-2012,22,22,21,matched,False
+375,Finland,375,Finland,1973-2012,40,40,40,matched,False
+380,Sweden,380,Sweden,1973-2012,40,40,40,matched,False
+385,Norway,385,Norway,1973-2012,40,40,40,matched,False
+390,Denmark,390,Denmark,1945-2012,68,68,53,matched,False
+411,Equatorial Guinea,411,Equatorial Guinea,1989-2012,24,24,24,matched,False
+432,Mali,432,Mali,1962-2012,28,28,25,matched,False
+433,Senegal,433,Senegal,1982-2012,31,31,31,matched,False
+435,Mauritania,435,Mauritania,1975-2012,35,35,35,matched,False
+436,Niger,436,Niger (the),1988-2012,25,25,25,matched,False
+437,Cote d'Ivoire,437,Côte d'Ivoire,1960-2011,32,32,31,matched,False
+452,Ghana,452,Ghana,1957-2005,49,49,46,matched,False
+471,Cameroon,471,Cameroon,1960-2012,45,45,45,matched,False
+475,Nigeria,475,Nigeria,1960-2012,53,53,52,matched,False
+483,Chad,483,Chad,1966-2011,46,46,46,matched,False
+490,Congo-Zaire,490,Congo (the Democratic Republic of the),1960-2012,53,53,52,matched,False
+500,Uganda,500,Uganda,1962-2012,51,51,31,matched,False
+501,Kenya,501,Kenya,1963-2012,50,50,49,matched,False
+510,Tanzania,510,"Tanzania, the United Republic of",1964-2012,49,49,49,matched,False
+520,Somalia,520,Somalia,1991-2012,22,22,22,matched,False
+522,Djibouti,522,Djibouti,1977-2012,36,36,0,matched,False
+530,Ethiopia,530,Ethiopia,1948-2012,65,65,20,matched,False
+531,Eritrea,531,Eritrea,1993-2012,20,20,19,matched,False
+540,Angola,540,Angola,1975-2012,38,38,33,matched,False
+551,Zambia,551,Zambia,1988-2012,25,25,25,matched,False
+552,Zimbabwe,552,Zimbabwe,1987-2012,26,26,26,matched,False
+560,South Africa,560,South Africa,1959-2012,54,54,53,matched,False
+565,Namibia,565,Namibia,1990-2012,23,23,23,matched,False
+571,Botswana,571,Botswana,1995-2012,18,18,18,matched,False
+581,Comoros,581,Comoros (the),1996-2012,17,17,17,matched,False
+600,Morocco,600,Morocco,1958-2012,40,40,38,matched,False
+615,Algeria,615,Algeria,1963-2012,50,50,50,matched,False
+620,Libya,620,Libya,2011-2012,2,2,2,matched,False
+625,Sudan,625,Sudan (the),1956-2012,57,57,0,matched,False
+630,Iran,630,Iran (Islamic Republic of),1945-2012,68,68,53,matched,False
+640,Turkey,640,Turkey,1965-2012,48,48,48,matched,False
+645,Iraq,645,Iraq,1946-2012,67,67,53,matched,False
+652,Syria,652,Syrian Arab Republic (the),1946-2012,65,65,53,matched,False
+666,Israel,666,Israel,1963-2012,50,50,50,matched,False
+679,Yemen,679,Yemen,1990-2012,23,23,23,matched,False
+698,Oman,698,Oman,1963-1975,13,13,13,matched,False
+700,Afghanistan,700,Afghanistan,1960-2012,53,53,13,matched,False
+702,Tajikistan,702,Tajikistan,1991-1998,8,8,7,matched,False
+703,Kyrgyzstan,703,Kyrgyzstan,1991-2000,10,10,9,matched,False
+704,Uzbekistan,704,Uzbekistan,1991-2012,22,22,21,matched,False
+705,Kazakhstan,705,Kazakhstan,1991-1999,9,9,8,matched,False
+710,China,710,China,1945-2012,68,68,53,matched,False
+713,Taiwan,713,Taiwan (Province of China),1988-2012,25,25,0,matched,False
+740,Japan,740,Japan,1972-2012,41,41,41,matched,False
+750,India,750,India,1947-2012,66,66,53,matched,False
+770,Pakistan,770,Pakistan,1947-2012,66,66,42,matched,False
+771,Bangladesh,771,Bangladesh,1972-2012,41,41,41,matched,False
+775,Myanmar,775,Myanmar,1948-2012,65,65,53,matched,False
+780,Sri Lanka,780,Sri Lanka,1949-2012,64,64,52,matched,False
+790,Nepal,790,Nepal,1951-2012,37,37,28,matched,False
+800,Thailand,800,Thailand,1947-2012,66,66,53,matched,False
+812,Laos,812,Lao People's Democratic Republic (the),1953-2012,60,60,29,matched,False
+816,Vietnam,816,Viet Nam,1975-2012,38,38,29,matched,False
+820,Malaysia,820,Malaysia,1963-2012,50,50,47,matched,False
+840,Philippines,840,Philippines (the),1968-2012,45,45,45,matched,False
+850,Indonesia,850,Indonesia,1950-2012,63,63,53,matched,False
+900,Australia,900,Australia,1945-2012,68,68,53,matched,False
+910,Papua New Guinea,910,Papua New Guinea,1975-2012,38,38,37,matched,False
+920,New Zealand,920,New Zealand,1962-2012,51,51,51,matched,False
+935,Vanuatu,935,Vanuatu,1980-2012,33,33,32,matched,False
+940,Solomon Islands,940,Solomon Islands,1978-2012,35,35,33,matched,False
+946,Kiribati,946,Kiribati,1979-1983,5,5,4,matched,False
+987,Micronesia,987,Micronesia (Federated States of),1986-2012,27,27,26,matched,False
+260,Germany,255,Germany,1949-2012,64,22,22,partial,True
+347,Kosovo,347,,2008-2012,5,0,0,unmatched,False
+817,South Vietnam,817,,1954-1975,22,0,0,unmatched,False

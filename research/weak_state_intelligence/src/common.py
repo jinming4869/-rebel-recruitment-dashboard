@@ -69,7 +69,12 @@ def load_source(source_id: str, root: Path = ROOT, allow_unconfirmed: bool = Fal
         raise SourceNotReady(f"{source_id}: no file matches {spec['file_glob']} (download pending).")
     if len(files) > 1:
         raise SourceNotReady(f"{source_id}: {len(files)} files match; freeze exactly one version.")
-    df = pd.read_csv(files[0], low_memory=False)
+    if spec.get("reader") == "stata":
+        df = pd.read_stata(files[0], convert_categoricals=False)
+    else:
+        df = pd.read_csv(files[0], low_memory=False, usecols=spec.get("usecols"))
+    if spec.get("strip_header"):
+        df.columns = [c.strip() for c in df.columns]
     mapping = {raw: logical for logical, raw in spec["columns"].items() if raw}
     missing = [raw for raw in mapping if raw not in df.columns]
     if missing:

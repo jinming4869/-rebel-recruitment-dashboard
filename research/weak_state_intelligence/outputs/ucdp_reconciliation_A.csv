@@ -1,0 +1,232 @@
+conflict_id,onset_year,onset_gwno,n_newconf_rows,first_intrastate_year,gwno,side_b,territory_name,first_year_any_type,status
+200.0,1946,145,1,1946,145,Popular Revolutionary Movement,,1946,agree
+202.0,1946,710,1,1946,710,PLA,,1946,agree
+203.0,1946,350,1,1946,350,DSE,,1946,agree
+205.0,1946,630,1,1946,630,KDPI,Kurdistan,1946,agree
+206.0,1946,630,1,1946,630,Republic of Azerbaijan,Azerbaijan,1946,agree
+209.0,1946,840,1,1946,840,Huk,,1946,agree
+210.0,1946,365,1,1946,365,Forest Brothers,Estonia,1946,agree
+211.0,1946,365,1,1946,365,"LNPA, LTS(p)A",Latvia,1946,agree
+212.0,1946,365,1,1946,365,BDPS,Lithuania,1946,agree
+213.0,1946,365,1,1946,365,UPA,Ukraine,1946,agree
+217.0,1947,710,1,1947,710,Taiwanese insurgents,Taiwan,1947,agree
+220.0,1947,150,1,1947,150,"Opposition coalition (Febreristas, Liberals and Communists)",,1947,agree
+221.0,1949,775,1,1949,775,KNUP,Karen,1949,agree
+222.0,1948,775,1,1948,775,"CPB, CPB-RF, PVO - ""White Band"" faction",,1948,agree
+223.0,1948,775,1,1948,775,"APLP, Mujahid Party",Arakan,1948,agree
+224.0,1949,775,1,1949,775,MFL-MUF,Mon,1949,agree
+225.0,1948,94,1,1948,94,National Liberation Army,,1948,agree
+227.0,1948,750,1,1948,750,CPI,,1948,agree
+230.0,1948,678,1,1948,678,Opposition coalition,,1948,agree
+231.0,1949,775,1,1949,775,PNDF,Kachin,1949,agree
+233.0,1949,90,1,1949,90,Military faction (Guatemala),,1949,agree
+234.0,1949,666,1,1949,666,Palestinian insurgents,Palestine,1949,agree
+236.0,1950,710,1,1950,710,Tibet,Tibet,1950,agree
+237.0,1950,850,1,1950,850,Republic of South Moluccas,South Moluccas,1950,agree
+240.0,1951,800,1,1951,800,Military faction (navy),,1951,agree
+242.0,1953,40,1,1953,40,M-26-7,,1953,agree
+243.0,1953,850,1,1953,850,Darul Islam,,1953,agree
+247.0,1955,160,1,1955,160,"Military faction (forces of Eduardo A. Lonardi Doucet), Military faction (forces of Samuel Toranzo Calderón)",,1955,agree
+249.0,1955,817,1,1955,817,FNL,South Vietnam,1955,agree
+251.0,1956,750,1,1956,750,NNC,Nagaland,1956,agree
+253.0,1957,775,1,1957,775,KNPP,Karenni,1957,agree
+258.0,1957,698,1,1957,698,State of Oman/Free Oman,Oman,1957,agree
+259.0,1958,645,1,1958,645,Military faction (free Officers Movement),,1958,agree
+260.0,1958,660,1,1958,660,Independent Nasserite Movement,,1958,agree
+261.0,1958,820,1,1958,820,CPM,,1958,agree
+262.0,1959,812,1,1959,812,Pathet Lao,,1959,agree
+264.0,1959,775,1,1959,775,NSH,Shan,1959,agree
+265.0,1961,490,1,1961,490,State of Katanga,Katanga,1961,agree
+266.0,1960,490,1,1960,490,Independent Mining State of South Kasai,South Kasai,1960,agree
+267.0,1960,530,1,1960,530,Military faction (forces of Mengistu Neway),,1960,agree
+269.0,1960,790,1,1960,790,NC,,1960,agree
+270.0,1961,220,1,1961,220,OAS,,1961,agree
+271.0,1961,645,1,1961,645,KDP,Kurdistan,1961,agree
+275.0,1964,530,1,1964,530,ELF,Eritrea,1964,agree
+277.0,1962,101,1,1962,101,Military faction (navy),,1962,agree
+280.0,1963,820,1,1963,820,CCO,North Borneo,1963,agree
+282.0,1963,625,1,1963,625,SSLM,Southern Sudan,1963,agree
+283.0,1964,490,1,1964,490,CNL,,1964,agree
+284.0,1964,481,1,1964,481,Military faction (forces loyal to Léon M'Ba),,1964,agree
+287.0,1965,516,1,1965,516,Military faction (forces loyal to Gervais Nyangoma),,1965,agree
+288.0,1966,483,1,1966,483,Frolinat,,1966,agree
+289.0,1964,100,1,1964,100,FARC,,1964,agree
+290.0,1965,42,1,1965,42,Military faction (constitutionalists),,1965,agree
+291.0,1965,850,1,1965,850,OPM,West Papua,1965,agree
+292.0,1965,135,1,1965,135,"ELN, MIR",,1965,agree
+295.0,1966,452,1,1966,452,NLC,,1966,agree
+296.0,1966,750,1,1966,750,MNF,Mizoram,1966,agree
+297.0,1966,475,1,1966,475,Military faction (forces of Patrick Nzeogwu),,1966,agree
+298.0,1966,560,1,1966,560,SWAPO,Namibia,1966,agree
+299.0,1966,652,1,1966,652,Military faction (forces loyal to Nureddin Atassi and Youssef Zeayen),,1966,agree
+300.0,1967,811,1,1967,811,KR,,1967,agree
+303.0,1967,475,1,1967,475,Republic of Biafra,Biafra,1967,agree
+307.0,2000,438,1,2000,438,RFDG,,2000,agree
+308.0,1970,840,1,1970,840,MIM,Mindanao,1970,agree
+309.0,1971,625,1,1971,625,Sudanese Communist Party,,1971,agree
+310.0,1971,580,1,1971,580,Monima ,,1971,agree
+311.0,1971,600,1,1971,600,Military faction (forces of Mohamed Madbouh),,1971,agree
+312.0,1971,770,1,1971,770,Mukti Bahini,East Pakistan,1971,agree
+313.0,1971,780,1,1971,780,JVP,,1971,agree
+314.0,1971,500,1,1971,500,Military faction (forces of Idi Amin),,1971,agree
+315.0,1971,200,1,1971,200,PIRA,Northern Ireland,1971,agree
+316.0,1972,92,1,1972,92,Military faction (forces of Benjamin Mejia),,1972,agree
+317.0,1969,698,1,1969,698,PFLO,,1969,agree
+318.0,1967,552,1,1967,552,ZAPU,,1967,agree
+319.0,1972,165,1,1972,165,MLN/Tupamaros,,1972,agree
+321.0,1973,155,1,1973,155,"Military faction (forces of Augusto Pinochet, Toribio Merino and Leigh Guzman) ",,1973,agree
+322.0,1975,771,1,1975,771,PCJSS,Chittagong Hill Tracts,1975,agree
+325.0,1974,770,1,1974,770,BLF,Balochistan,1974,agree
+326.0,1997,531,1,1997,531,EIJM - AS,,1997,agree
+327.0,1975,540,1,1975,540,"FNLA, UNITA",,1975,agree
+329.0,1964,530,1,1964,530,Ogaden Liberation Front,Ogaden,1964,agree
+330.0,1975,850,1,1975,850,CNRT,East Timor,1975,agree
+331.0,1975,600,1,1975,600,POLISARIO,Sahrawi Arab Democratic Republic (Western Sahara),1975,agree
+332.0,1977,541,1,1977,541,Renamo,,1977,agree
+333.0,1978,700,1,1978,700,PDPA,,1978,agree
+335.0,1979,750,1,1979,750,TNV,Tripura,1979,agree
+336.0,1977,93,1,1977,93,FSLN,,1977,agree
+337.0,1982,520,1,1982,520,SSDF,,1982,agree
+338.0,1979,630,1,1979,630,MEK,,1979,agree
+339.0,1979,630,1,1979,630,APCO,Arabistan,1979,agree
+340.0,1979,670,1,1979,670,JSM,,1979,agree
+341.0,1980,450,1,1980,450,Military faction (forces of Samuel Doe),,1980,agree
+342.0,1978,230,1,1978,230,ETA,Basque,1978,agree
+343.0,1980,616,1,1980,616,Résistance Armée Tunisienne,,1980,agree
+344.0,1981,420,1,1981,420,NRC,,1981,agree
+345.0,1981,560,1,1981,560,ANC,,1981,agree
+347.0,1982,750,1,1982,750,PLA,Manipur,1982,agree
+348.0,1982,501,1,1982,501,Military faction (forces of Hezekiah Ochuka),,1982,agree
+351.0,1983,750,1,1983,750,Sikh insurgents,Punjab/Khalistan,1983,agree
+352.0,1984,780,1,1984,780,"LTTE, TELO",Eelam,1984,agree
+353.0,1960,471,1,1960,471,UPC,,1960,agree
+354.0,1984,640,1,1984,640,PKK,Kurdistan,1984,agree
+357.0,1987,115,1,1987,115,SLA,,1987,agree
+358.0,1986,461,1,1986,461,MTD,,1986,agree
+359.0,1986,680,1,1986,680,YSP - AFI,,1986,agree
+360.0,1987,439,1,1987,439,Popular Front,,1987,agree
+362.0,1989,581,1,1989,581,Presidential guard,,1989,agree
+363.0,1975,530,1,1975,530,ALF,Afar,1975,agree
+364.0,1990,750,1,1990,750,Kashmir insurgents,Kashmir,1990,agree
+365.0,1990,750,1,1990,750,ULFA,Assam,1990,agree
+366.0,1990,850,1,1990,850,GAM,Aceh,1990,agree
+367.0,1989,95,1,1989,95,Military faction (forces of Moisés Giroldi) ,,1989,agree
+369.0,1990,910,1,1990,910,BRA,Bougainville,1990,agree
+370.0,1989,360,1,1989,360,"Military faction (forces of Nicolae Ceausescu), NSF",,1989,agree
+372.0,1990,432,1,1990,432,MPA,Azawad,1990,agree
+373.0,1994,436,1,1994,436,CRA,Air and Azawad,1994,agree
+374.0,1990,517,1,1990,517,FPR,,1990,agree
+375.0,1990,433,1,1990,433,MFDC,Casamance,1990,agree
+376.0,1990,365,1,1990,365,Republic of Armenia,Nagorno-Karabakh,1990,agree
+377.0,1990,365,1,1990,365,APF,Azerbaijan,1990,agree
+378.0,1990,52,1,1990,52,Jamaat al-Muslimeen,,1990,agree
+379.0,1991,522,1,1991,522,FRUD,,1991,agree
+380.0,1991,372,1,1991,372,National Guard and Mkhedrioni,,1991,agree
+381.0,1989,41,1,1989,41,Military faction (forces of Himmler Rebu and Guy Francois) ,,1989,agree
+382.0,1991,451,1,1991,451,RUF,,1991,agree
+383.0,1991,640,1,1991,640,DHKP-C,,1991,agree
+384.0,1991,345,1,1991,345,Republic of Slovenia,Slovenia,1991,agree
+385.0,1991,345,1,1991,345,"Croatian irregulars, Republic of Croatia",Croatia,1991,agree
+386.0,1991,615,1,1991,615,Takfir wa'l Hijra,,1991,agree
+387.0,1991,540,1,1991,540,FLEC-R,Cabinda,1991,agree
+388.0,1991,373,1,1991,373,Republic of Artsakh,Artsakh (Nagorno-Karabakh),1991,agree
+389.0,1992,346,1,1992,346,"Serbian irregulars, Serbian Republic of Bosnia-Herzegovina",Serb,1992,agree
+390.0,1992,344,1,1992,344,"Serbian irregulars, Serbian Republic of Krajina",Serb,1992,agree
+391.0,1993,651,1,1993,651,al-Gama'a al-Islamiyya,,1993,agree
+392.0,1992,372,1,1992,372,Republic of Abkhazia,Abkhazia,1992,agree
+393.0,1992,372,1,1992,372,Republic of South Ossetia,South Ossetia,1992,agree
+394.0,1992,359,1,1992,359,PMR,Dniestr,1992,agree
+395.0,1992,702,1,1992,702,"PFT, UTO",,1992,agree
+396.0,1993,373,1,1993,373,Military faction (forces of Suret Husseinov),,1993,agree
+397.0,1993,346,1,1993,346,Autonomous Province of Western Bosnia,Bihaca Krajina,1993,agree
+398.0,1992,346,1,1992,346,Croatian Republic of Bosnia-Herzegovina,Croat,1992,agree
+399.0,1993,365,1,1993,365,Parliamentary Forces,,1993,agree
+400.0,1994,70,1,1994,70,EZLN,,1994,agree
+401.0,1994,365,1,1994,365,Chechen Republic of Ichkeria,Chechnya,1994,agree
+402.0,1994,678,1,1994,678,Democratic Republic of Yemen,South Yemen,1994,agree
+404.0,1990,770,1,1990,770,MQM,,1990,agree
+406.0,1995,436,1,1995,436,FDR,Eastern Niger,1995,agree
+407.0,1997,581,1,1997,581,MPA/Republic of Anjouan,Anjouan,1997,agree
+408.0,1993,484,1,1993,484,Ninjas,,1993,agree
+410.0,1998,404,1,1998,404,"Military Junta for the Consolidation of Democracy, Peace and Justice",,1998,agree
+411.0,1998,570,1,1998,570,Military faction (Lesotho),,1998,agree
+412.0,1998,345,1,1998,345,UCK,Kosovo,1998,agree
+413.0,1977,530,1,1977,530,OLF,Oromiya,1977,agree
+414.0,1999,365,1,1999,365,Wahhabi movement of the Buinaksk district,Dagestan,1999,agree
+415.0,1999,704,1,1999,704,IMU,,1999,agree
+416.0,2001,482,1,2001,482,Military faction (forces of André Kolingba),,2001,agree
+417.0,2001,343,1,2001,343,UCK,,2001,agree
+418.0,2001,2,1,2001,2,al-Qaida ,,2001,agree
+419.0,2002,437,1,2002,437,"MPCI, MPIGO",,2002,agree
+421.0,1989,750,1,1989,750,ABSU,Bodoland,1989,agree
+422.0,1997,775,1,1997,775,UWSA,Wa,1997,agree
+423.0,2003,800,1,2003,800,Patani insurgents,Patani,2003,agree
+424.0,2004,475,1,2004,475,Ahlul Sunnah Jamaa,Northern Nigeria,2004,agree
+425.0,2004,475,1,2004,475,NDPVF,Niger Delta,2004,agree
+426.0,1990,666,1,1990,666,Hezbollah,Southern Lebanon,1990,agree
+428.0,1975,435,1,1975,435,POLISARIO,Sahrawi Arab Democratic Republic (Western Sahara),1975,agree
+429.0,2007,490,1,2007,490,BDK,Kongo Kingdom,2007,agree
+430.0,1991,436,1,1991,436,FLAA,,1991,agree
+432.0,2007,365,1,2007,365,Forces of the Caucasus Emirate,Caucasus Emirate,2007,agree
+434.0,2008,750,1,2008,750,PULF,Islamic State,2008,agree
+436.0,1977,530,1,1977,530,SALF,"Arssi, Bale & Sidamo",1977,agree
+437.0,1981,530,1,1981,530,SLM,Sidamaland,1981,agree
+439.0,2009,775,1,2009,775,MNDAA,Kokang,2009,agree
+440.0,1973,775,1,1973,775,LNUP,Lahu,1973,agree
+442.0,2010,435,1,2010,435,AQIM,,2010,agree
+11342.0,2012,750,1,2012,750,GNLA,Garoland,2012,agree
+11344.0,2011,625,1,2011,625,Republic of South Sudan,Abyei,2011,agree
+11345.0,2011,626,1,2011,626,"SSDM/A, SSLM/A",,2011,agree
+11346.0,2011,620,1,2011,620,"Forces of Muammar Gaddafi, NTC",,2011,agree
+11347.0,2009,432,1,2009,432,AQIM,,2009,agree
+11349.0,2008,710,1,2008,710,ETIM,"East Turkestan
+",2008,agree
+11350.0,2005,771,1,2005,771,"PBCP, PBCP-J",,2005,agree
+11447.0,1991,530,1,1991,530,IGLF,Hararghe,1991,agree
+11475.0,1991,775,1,1991,775,NSCN-K,Nagaland,1991,agree
+11487.0,2013,820,1,2013,820,Sultanate of Sulu,Sabah,2013,agree
+11884.0,1947,751,1,1947,751,CPI,,1947,agree
+13042.0,2012,652,1,2012,652,PYD,Rojava Kurdistan,2012,agree
+13219.0,2014,369,1,2014,369,Maidan,,2014,agree
+13246.0,2014,369,1,2014,369,DPR,Donetsk,2014,agree
+13247.0,2014,369,1,2014,369,LPR,Lugansk,2014,agree
+13306.0,2014,369,1,2014,369,United Armed Forces of Novorossiya,Novorossiya,2014,agree
+13588.0,2015,365,1,2015,365,IS,Islamic State,2015,agree
+13604.0,2013,652,1,2013,652,IS,Islamic State,2013,agree
+13611.0,2015,432,1,2015,432,FLM,Macina Empire,2015,agree
+13637.0,2015,700,1,2015,700,IS,Islamic State,2015,agree
+13638.0,2015,471,1,2015,471,IS,Islamic State,2015,agree
+13639.0,2015,436,1,2015,436,IS,Islamic State,2015,agree
+13640.0,2015,483,1,2015,483,IS,Islamic State,2015,agree
+13641.0,2015,475,1,2015,475,IS,Islamic State,2015,agree
+13645.0,2015,678,1,2015,678,IS,Islamic State,2015,agree
+13646.0,2015,501,1,2015,501,Al-Shabaab,Northeastern Province and Coast,2015,agree
+13648.0,2015,651,1,2015,651,IS,Islamic State,2015,agree
+13653.0,2015,750,1,2015,750,UNLFW,Western South East Asia,2015,agree
+13674.0,2016,771,1,2016,771,IS,Islamic State,2016,agree
+13675.0,2014,660,1,2014,660,IS,Islamic State,2014,agree
+13694.0,2015,620,1,2015,620,IS,Islamic State,2015,agree
+13721.0,2015,615,1,2015,615,IS,Islamic State,2015,agree
+13809.0,2016,652,1,2016,652,SDF,Rojava Kurdistan,2016,agree
+13840.0,2019,439,1,2019,439,IS,Islamic State,2019,agree
+13886.0,2016,663,1,2016,663,IS,Islamic State,2016,agree
+13902.0,2015,640,1,2015,640,IS,Islamic State,2015,agree
+13936.0,2016,770,1,2016,770,IS,Islamic State,2016,agree
+14074.0,2018,520,1,2018,520,Republic of Somaliland,Somaliland,2018,agree
+14113.0,2017,432,1,2017,432,IS,Islamic State,2017,agree
+14129.0,2017,471,1,2017,471,Ambazonia insurgents,Ambazonia,2017,agree
+14197.0,2019,520,1,2019,520,IS,Islamic State,2019,agree
+14268.0,2017,630,1,2017,630,IS,Islamic State,2017,agree
+14275.0,2016,840,1,2016,840,IS,Islamic State,2016,agree
+14333.0,2016,616,1,2016,616,IS,Islamic State,2016,agree
+14692.0,2017,490,1,2017,490,IS,Islamic State,2017,agree
+14845.0,2019,541,1,2019,541,IS,Islamic State,2019,agree
+14935.0,2019,530,1,2019,530,Military faction (forces of Asaminew Tsige),Amhara,2019,agree
+15183.0,2020,510,1,2020,510,IS,Islamic State,2020,agree
+15256.0,2022,434,1,2022,434,JNIM,,2022,agree
+15283.0,2015,482,1,2015,482,FPRC,Logone,2015,agree
+15438.0,2022,500,1,2022,500,IS,Islamic State,2022,agree
+16038.0,2023,432,1,2023,432,FLA,Azawad,2023,agree
+16069.0,2023,530,1,2023,530,Fano,Amhara,2023,agree
+16292.0,2018,702,1,2018,702,IS,Islamic State,2018,agree
+16379.0,2024,520,1,2024,520,Jubaland State of Somalia,Jubaland,2024,agree

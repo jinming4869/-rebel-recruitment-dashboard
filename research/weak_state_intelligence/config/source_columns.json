@@ -1,57 +1,88 @@
 {
-  "_doc": "Logical-name -> raw-column map for each frozen source. Every block starts confirmed=false: column names are from memory/documentation and MUST be checked against the downloaded codebook (run `python -I src/inspect_source.py <file>`). Build scripts refuse to run on an unconfirmed block, so a wrong guess fails loudly instead of silently producing numbers.",
+  "_doc": "Logical-name -> raw-column map per frozen source. confirmed=true means the columns were checked against the registered file (src/inspect_source.py) AND its codebook on the date given. 'member' reads a CSV inside a registered zip; 'reader' is csv|stata|xlsx; 'strip_header' strips whitespace in header names only (UCDP onset country file pads ' conflict_ids').",
   "DATA_SDM": {
-    "confirmed": false,
-    "file_glob": "data/raw/DATA_SDM/*.csv",
+    "confirmed": true, "confirmed_on": "2026-10-14",
+    "file_glob": "data/raw/DATA_SDM/SDM.csv",
     "columns": {
-      "movement_id": "sdmid",
-      "movement_name": "sdmname",
-      "country_code": "gwid",
-      "country_name": "statename",
-      "year": "year",
-      "anti_state_violence": "violence",
-      "claim_active": null,
-      "govt_response_subsample": null,
-      "sample_weight": null
+      "movement_id": "groupid", "movement_name": "group", "country_name": "country", "country_code": "ccode",
+      "year": "year", "active": "active", "phase1": "phase1", "phase2": "phase2",
+      "fyphase1": "fyphase1", "fyphase2": "fyphase2",
+      "startdate1": "startdate1", "enddate1": "enddate1", "startdate2": "startdate2", "enddate2": "enddate2",
+      "prioract": "prioract", "priorviol": "priorviol", "priorconflict": "priorconflict",
+      "anti_state_violence": "violsd", "high_violence": "hviolsd", "ambiguous": "ambiguous",
+      "violsd_onset": "violsd_onset", "doublecount": "doublecount",
+      "sample": "sample", "weight": "weight",
+      "ucdp_terrconflict": "ucdp_terrconflict", "ucdp_conflictid_old": "ucdp_conflictid"
     },
-    "notes": "claim_active: if null, a movement-year row is taken to mean the claim is active. Government-response subsample flag and weights must be identified from the SDM codebook before any response-stage figure is reported."
+    "notes": "Rows with active==0 are the 10-year policy lookback (violsd missing). enddate 8888 = host-state change, 9999 = ongoing in 2012. A host-state change creates a NEW groupid (prioract==3); there is no predecessor ID. ccode is COW-style (see country_crosswalk). ucdp_conflictid uses old 'x-yyy' UCDP IDs and contains Excel date corruption ('Jan 99', 'Jan 54')."
   },
   "DATA_UCDP_ACD": {
-    "confirmed": false,
-    "file_glob": "data/raw/DATA_UCDP_ACD/*.csv",
+    "confirmed": true, "confirmed_on": "2026-10-14",
+    "file_glob": "data/raw/DATA_UCDP_ACD/UcdpPrioConflict_v26_1.csv",
     "columns": {
-      "conflict_id": "conflict_id",
-      "year": "year",
-      "type_of_conflict": "type_of_conflict",
-      "incompatibility": "incompatibility",
-      "gwno": "gwno_a",
-      "side_b": "side_b",
-      "side_b_id": "side_b_id",
-      "territory_name": "territory_name",
-      "start_date": "start_date",
-      "start_date2": "start_date2"
+      "conflict_id": "conflict_id", "year": "year", "type_of_conflict": "type_of_conflict",
+      "incompatibility": "incompatibility", "gwno": "gwno_a", "side_a": "side_a", "side_b": "side_b",
+      "territory_name": "territory_name", "start_date": "start_date", "start_date2": "start_date2",
+      "intensity_level": "intensity_level"
+    },
+    "intrastate_types": [3, 4]
+  },
+  "DATA_UCDP_ACD_251": {
+    "confirmed": true, "confirmed_on": "2026-10-14",
+    "file_glob": "data/raw/DATA_UCDP_ACD_251/UcdpPrioConflict_v25_1.csv",
+    "columns": {
+      "conflict_id": "conflict_id", "year": "year", "type_of_conflict": "type_of_conflict",
+      "incompatibility": "incompatibility", "gwno": "gwno_a", "side_a": "side_a", "side_b": "side_b",
+      "territory_name": "territory_name", "start_date": "start_date", "start_date2": "start_date2",
+      "intensity_level": "intensity_level"
     },
     "intrastate_types": [3, 4]
   },
   "DATA_UCDP_DYAD": {
-    "confirmed": false,
-    "file_glob": "data/raw/DATA_UCDP_DYAD/*.csv",
-    "columns": {"dyad_id": "dyad_id", "conflict_id": "conflict_id", "year": "year", "side_b": "side_b", "side_b_id": "side_b_id"}
+    "confirmed": true, "confirmed_on": "2026-10-14",
+    "file_glob": "data/raw/DATA_UCDP_DYAD/Dyadic_v26_1.csv",
+    "columns": {"dyad_id": "dyad_id", "conflict_id": "conflict_id", "year": "year", "side_b": "side_b", "side_b_id": "side_b_id", "gwno": "gwno_a"}
   },
   "DATA_UCDP_ONSET": {
-    "confirmed": false,
-    "file_glob": "data/raw/DATA_UCDP_ONSET/*.csv",
-    "columns": {"gwno": "gwno_a", "year": "year", "conflict_ids": "conflict_ids", "new_conflict_onset": "onset1"},
-    "notes": "Onset-file column names are the least certain of all; confirm before reconciliation."
+    "confirmed": true, "confirmed_on": "2026-10-14",
+    "file_glob": "data/raw/DATA_UCDP_ONSET/ucdp-intrastate-conflict-onset-251.csv",
+    "strip_header": true,
+    "columns": {"gwno": "gwno_a", "year": "year", "conflict_ids": "conflict_ids", "new_conflict_onset": "newconf", "onset1": "onset1", "onset2": "onset2", "year_prev": "year_prev"},
+    "notes": "Conflict-level (version 1): one row per onset; conflicts compared only with their own history. newconf=1 marks a conflict ID's first appearance."
+  },
+  "DATA_UCDP_ONSET_COUNTRY": {
+    "confirmed": true, "confirmed_on": "2026-10-14",
+    "file_glob": "data/raw/DATA_UCDP_ONSET_COUNTRY/ucdp-intrastate-country-onset-251.csv",
+    "strip_header": true,
+    "columns": {"gwno": "gwno_a", "year": "year", "conflict_ids": "conflict_ids", "new_conflict_onset": "newconf", "onset1": "onset1", "onset2": "onset2"},
+    "notes": "Country-level (version 2): countries with ongoing intrastate conflict are not at risk."
   },
   "DATA_GDPPC": {
-    "confirmed": false,
-    "file_glob": "data/raw/DATA_GDPPC/*.csv",
-    "columns": {"country_code": "gwno", "year": "year", "gdppc": "gdppc"}
+    "confirmed": true, "confirmed_on": "2026-10-14",
+    "file_glob": "data/raw/DATA_GDPPC/qog_std_ts_jan26.csv",
+    "usecols": ["ccodecow", "cname", "year", "wdi_gdpcapcon2015", "mad_gdppc"],
+    "columns": {"country_code_cow": "ccodecow", "country_name": "cname", "year": "year", "gdppc": "wdi_gdpcapcon2015", "gdppc_maddison": "mad_gdppc"},
+    "notes": "QoG ccode is ISO numeric, NOT COW: join SDM ccode to ccodecow via config/country_crosswalk.json. wdi_gdpcapcon2015 = constant 2015 USD, observed 1960-2024; mad_gdppc is a separate sensitivity series (2011 USD) and is never spliced."
+  },
+  "DATA_SRDP": {
+    "confirmed": true, "confirmed_on": "2026-10-14",
+    "file_glob": "data/raw/DATA_SRDP/SRDP_2020_UPDATE.csv",
+    "columns": {"org_id": "facid", "org_name": "facname", "group_id": "kgcid", "group": "group", "country_name": "country", "year": "year",
+                "autonomy": "autonomy", "independence": "independence", "violence_state": "violence_state",
+                "fatal_violence_state": "fatal_violence_state", "protest": "protest_demonstration", "institutional": "institutional", "accom": "accom"},
+    "notes": "kgcid is NOT SDM groupid; any movement link needs reviewed crosswalk rows."
+  },
+  "DATA_HS_CAPACITY": {
+    "confirmed": true, "confirmed_on": "2026-10-14",
+    "reader": "stata",
+    "file_glob": "data/raw/DATA_HS_CAPACITY/HansonSigman_source.dta",
+    "columns": {"country_code_cow": "ccode", "iso3": "iso3", "year": "year", "milpercap": "milpercap", "infcap": "infcap", "policecap": "policecap"},
+    "notes": "National proxies only (1960-2015). milpercap is not local deployable force; infcap is not challenger-specific information."
   },
   "DATA_ICI": {
     "confirmed": false,
     "file_glob": "data/raw/DATA_ICI/*.csv",
-    "columns": {"country_code": "gwno", "year": "year", "ici": "ici"}
+    "columns": {"country_code": "gwno", "year": "year", "ici": "ici"},
+    "notes": "Not supplied in the handoff."
   }
 }

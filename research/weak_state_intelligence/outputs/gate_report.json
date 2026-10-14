@@ -1,0 +1,31 @@
+{
+  "overall": "PENDING",
+  "gates": {
+    "i_denominator": {
+      "status": "PASS",
+      "evidence": {
+        "episodes": 271,
+        "countries": 88,
+        "escalated": 37,
+        "non_escalated_or_censored": 234
+      },
+      "caveat": "self-determination claimants only; awareness and offers are not observed in public data"
+    },
+    "ii_complete_chains": {
+      "status": "NOT_EVALUATED",
+      "why": "no coded disputes in belief_offer_event_ledger.csv"
+    },
+    "iii_overlap": {
+      "status": "NOT_EVALUATED",
+      "why": "no dispute with both I and K coded"
+    },
+    "iv_selection": {
+      "status": "NOT_EVALUATED",
+      "why": "no pilot draw yet"
+    },
+    "v_power_plan": {
+      "status": "NOT_EVALUATED",
+      "why": "outputs/power_plan.json missing (needs PI-fixed delta*)"
+    }
+  }
+}

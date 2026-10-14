@@ -6,22 +6,127 @@
     "not_applicable": "Logically impossible in this branch (e.g., challenger response when no government decision was communicated).",
     "right_censored": "Observation window ended before the event could occur."
   },
-  "stage2_awareness": ["aware", "not_aware", "unknown"],
-  "stage3_first_response": ["substantive_offer", "explicit_refusal", "verified_no_offer", "unknown"],
-  "stage4_challenger_response": ["accepted", "rejected", "rejected_reason_unknown", "unknown", "not_applicable"],
-  "stage5_violence_24m": ["anti_state_violence", "government_initiated_violence", "verified_no_violence_24m", "unknown", "right_censored"],
-  "belief_vs_benchmark": ["optimistic", "calibrated_or_uncertain", "pessimistic", "not_comparable", "unknown"],
-  "belief_construct": ["manpower", "arms", "territorial_reach", "local_support", "war_duration_cost", "victory_odds"],
-  "document_audience": ["private_internal", "private_to_mediator", "public", "unknown"],
-  "contemporaneity": ["contemporaneous", "near_contemporaneous_lt_6m", "retrospective", "unknown"],
-  "coder_confidence": ["high", "medium", "low"],
-  "offer_authority": ["authorized", "unauthorized", "disputed", "unknown"],
-  "offer_implementable": ["yes", "no", "doubtful", "unknown"],
-  "acceptance_benchmark": ["private_challenger_record", "mediator_record", "none_credible"],
-  "input_quality_component": ["field_report_coverage", "informant_network", "reporting_latency", "corroboration", "decisionmaker_receipt"],
-  "input_quality_level": ["high", "medium", "low", "unknown"],
-  "actor_match_confidence": ["exact_reviewed", "probable_reviewed", "ambiguous", "unmatched"],
-  "search_result": ["documents_found", "empty", "access_denied", "access_pending", "not_searched"],
-  "pilot_status": ["selected", "replaced", "unavailable", "traced_complete", "traced_partial"],
-  "rival_flags": ["K_military_incapacity", "R_reputation", "C_commitment", "Q_rebel_strategy", "cautious_offer", "S_state_penetration"]
+  "stage2_awareness": [
+    "aware",
+    "not_aware",
+    "unknown"
+  ],
+  "stage3_first_response": [
+    "substantive_offer",
+    "explicit_refusal",
+    "verified_no_offer",
+    "unknown"
+  ],
+  "stage4_challenger_response": [
+    "accepted",
+    "rejected",
+    "rejected_reason_unknown",
+    "unknown",
+    "not_applicable"
+  ],
+  "stage5_violence_24m": [
+    "anti_state_violence",
+    "government_initiated_violence",
+    "verified_no_violence_24m",
+    "unknown",
+    "right_censored"
+  ],
+  "belief_vs_benchmark": [
+    "optimistic",
+    "calibrated_or_uncertain",
+    "pessimistic",
+    "not_comparable",
+    "unknown"
+  ],
+  "belief_construct": [
+    "manpower",
+    "arms",
+    "territorial_reach",
+    "local_support",
+    "war_duration_cost",
+    "victory_odds"
+  ],
+  "document_audience": [
+    "private_internal",
+    "private_to_mediator",
+    "public",
+    "unknown"
+  ],
+  "contemporaneity": [
+    "contemporaneous",
+    "near_contemporaneous_lt_6m",
+    "retrospective",
+    "unknown"
+  ],
+  "coder_confidence": [
+    "high",
+    "medium",
+    "low"
+  ],
+  "offer_authority": [
+    "authorized",
+    "unauthorized",
+    "disputed",
+    "unknown"
+  ],
+  "offer_implementable": [
+    "yes",
+    "no",
+    "doubtful",
+    "unknown"
+  ],
+  "acceptance_benchmark": [
+    "private_challenger_record",
+    "mediator_record",
+    "none_credible"
+  ],
+  "input_quality_component": [
+    "field_report_coverage",
+    "informant_network",
+    "reporting_latency",
+    "corroboration",
+    "decisionmaker_receipt"
+  ],
+  "input_quality_level": [
+    "high",
+    "medium",
+    "low",
+    "unknown"
+  ],
+  "actor_match_confidence": [
+    "exact_reviewed",
+    "probable_reviewed",
+    "ambiguous",
+    "unmatched"
+  ],
+  "search_result": [
+    "documents_found",
+    "empty",
+    "access_denied",
+    "access_pending",
+    "not_searched",
+    "environment_blocked"
+  ],
+  "pilot_status": [
+    "selected",
+    "replaced",
+    "unavailable",
+    "traced_complete",
+    "traced_partial"
+  ],
+  "rival_flags": [
+    "K_military_incapacity",
+    "R_reputation",
+    "C_commitment",
+    "Q_rebel_strategy",
+    "cautious_offer",
+    "S_state_penetration"
+  ],
+  "lead_status": [
+    "verified_text_by_handoff",
+    "verified_published_third_party",
+    "catalog_lead_only",
+    "official_public_record_lead",
+    "to_identify"
+  ]
 }

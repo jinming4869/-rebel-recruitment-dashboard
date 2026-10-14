@@ -68,14 +68,22 @@ def dispute_chain(rows: pd.DataFrame) -> dict:
 
 
 def gate_i(root: Path) -> dict:
+    """(i) previolence claimant denominator that includes non-escalating episodes."""
     p = root / "ledgers" / "risk_set_flow.csv"
     flow = pd.read_csv(p) if p.exists() and p.stat().st_size else pd.DataFrame()
     if flow.empty:
-        return {"status": "NOT_EVALUATED", "why": "risk_set_flow.csv empty (SDM not yet frozen)"}
-    a = flow[(flow["w_stratum"] == "all") & (flow["window"] == "analysis_1960_2012")]
-    ok = len(a) and int(a["previolence_entries"].iloc[0]) > 0 and int(a["terminated_no_violence"].iloc[0] + a["right_censored"].iloc[0]) > 0
+        return {"status": "NOT_EVALUATED", "why": "risk_set_flow.csv empty (SDM not yet built)"}
+    a = flow[(flow["population"] == "primary_first_claim") & (flow["w_stratum"] == "all")
+             & (flow["window"] == "gdp_supported_1961_2012")]
+    if a.empty:
+        return {"status": "FAIL", "why": "no primary_first_claim row for 1961-2012"}
+    r = a.iloc[0]
+    non_esc = int(r["exit_claim_ended"] + r["exit_host_change"] + r["right_censored"])
+    ok = int(r["episodes"]) > 0 and non_esc > 0 and int(r["exit_violence"]) > 0
     return {"status": "PASS" if ok else "FAIL",
-            "evidence": a.to_dict("records")}
+            "evidence": {"episodes": int(r["episodes"]), "countries": int(r["countries"]),
+                         "escalated": int(r["exit_violence"]), "non_escalated_or_censored": non_esc},
+            "caveat": "self-determination claimants only; awareness and offers are not observed in public data"}
 
 
 def gate_ii(chains: dict, sampling: pd.DataFrame) -> dict:

@@ -23,61 +23,147 @@ import validate_ledgers  # noqa: E402
 from common import SourceNotReady, load_source, schemas  # noqa: E402
 
 
-def synthetic_panel():
+def _mov(mid, phases, prioract=0, start1=None, viol=(), priorviol=0, lookback=10, end_codes=None):
+    """Synthetic SDM-like movement: inactive lookback rows, then one or two active phases.
+    phases: list of (first_active_year, last_active_year)."""
     rows = []
-    # m1: enters 1970, violent 1971 (within 24m)  m2: enters 1970, violent 1980
-    # m3: enters 1975, ends 1978 no violence      m4: violent at entry
-    # m5: enters 2011, censored                    m6: enters 1945 (left-truncated), censored
-    spec = {"m1": (1970, 1971, 1971), "m2": (1970, 1980, 1980), "m3": (1975, 1978, None),
-            "m4": (1990, 1995, 1990), "m5": (2011, 2012, None), "m6": (1945, 2012, None)}
-    for mid, (a, b, v) in spec.items():
-        for y in range(a, b + 1):
-            rows.append({"movement_id": mid, "country_code": 100, "year": y,
-                         "anti_state_violence": int(v is not None and y >= v)})
-    return pd.DataFrame(rows)
+    first = phases[0][0]
+    end_codes = end_codes or [9999 if p[1] == 2012 else p[1] for p in phases]
+    starts = [start1 if start1 is not None else phases[0][0]] + [p[0] for p in phases[1:]]
+    for y in range(first - lookback, phases[-1][1] + 1):
+        k = next((i + 1 for i, (a, b) in enumerate(phases) if a <= y <= b), 0)
+        rows.append({"movement_id": mid, "movement_name": mid, "country_name": "Synthland", "country_code": 999,
+                     "year": y, "active": int(k > 0), "phase1": int(k == 1), "phase2": int(k == 2),
+                     "startdate1": starts[0], "enddate1": end_codes[0],
+                     "startdate2": starts[1] if len(phases) > 1 else None,
+                     "enddate2": end_codes[1] if len(phases) > 1 else None,
+                     "prioract": prioract, "priorviol": priorviol if k else None,
+                     "priorconflict": None, "anti_state_violence": (int(y in viol) if k else None),
+                     "high_violence": 0 if k else None, "violsd_onset": None, "doublecount": None,
+                     "sample": 0, "weight": None, "ucdp_terrconflict": 0})
+    df = pd.DataFrame(rows)
+    on = df["anti_state_violence"].eq(1) & ~df["anti_state_violence"].shift().eq(1)
+    df.loc[df["active"] == 1, "violsd_onset"] = on.astype(int)
+    return df
+
+
+def synthetic_panel():
+    return pd.concat([
+        _mov("m1", [(1970, 1975)], viol=(1971,)),                    # primary, violence within 24m
+        _mov("m2", [(1970, 1985)], viol=(1980,)),                    # primary, late violence
+        _mov("m3", [(1975, 1978)]),                                  # primary, claim ended, no violence
+        _mov("m4", [(1990, 1995)], viol=(1990,)),                    # violent in claim year
+        _mov("m5", [(2011, 2012)]),                                  # primary, censored before t0+2
+        _mov("m6", [(1945, 2012)], prioract=1, start1=1886),         # inherited (pre-1945)
+        _mov("m7", [(1960, 1965), (1980, 2012)], viol=(1962, 1990)), # violent phase 1, resumed phase 2
+        _mov("m8", [(1961, 1991)], end_codes=[8888]),                # host change exit
+    ], ignore_index=True)
 
 
 class RiskSetTests(unittest.TestCase):
     def setUp(self):
-        self.ep = brs.movement_episodes(synthetic_panel()).set_index("movement_id")
+        self.ep = brs.movement_episodes(synthetic_panel()).set_index("episode_id")
 
-    def test_exit_types(self):
-        self.assertEqual(self.ep.loc["m1", "exit_type"], "violence")
-        self.assertEqual(self.ep.loc["m3", "exit_type"], "terminated")
-        self.assertEqual(self.ep.loc["m5", "exit_type"], "right_censored")
+    def test_entry_is_first_active_year_not_lookback_row(self):
+        self.assertEqual(self.ep.loc["m1-p1", "entry_year"], 1970)
 
-    def test_violent_at_entry_excluded(self):
-        self.assertFalse(self.ep.loc["m4", "previolence_eligible"])
-        self.assertEqual(self.ep.loc["m4", "y24_annual_approx"], "not_applicable")
+    def test_populations(self):
+        pop = self.ep["population"]
+        self.assertEqual(pop["m1-p1"], "primary_first_claim")
+        self.assertEqual(pop["m4-p1"], "violent_in_claim_year")
+        self.assertEqual(pop["m6-p1"], "inherited_claim")
+        self.assertEqual(pop["m7-p2"], "resumed_claim")
+        self.assertTrue(self.ep.loc["m7-p2", "prior_violence"])
 
-    def test_y24(self):
-        self.assertEqual(self.ep.loc["m1", "y24_annual_approx"], "1")
-        self.assertEqual(self.ep.loc["m2", "y24_annual_approx"], "0")
-        self.assertEqual(self.ep.loc["m5", "y24_annual_approx"], "right_censored")
-        self.assertTrue(self.ep.loc["m6", "left_truncated"])
+    def test_recurrence_is_not_first_violence(self):
+        # m7's 1990 violence belongs to the resumed phase, never to a first-claim episode
+        self.assertEqual(self.ep.loc["m7-p1", "first_violence_year"], 1962)
+        self.assertEqual(self.ep.loc["m7-p2", "first_violence_year"], 1990)
+        self.assertNotEqual(self.ep.loc["m7-p2", "population"], "primary_first_claim")
+
+    def test_exits(self):
+        self.assertEqual(self.ep.loc["m3-p1", "exit_type"], "claim_ended")
+        self.assertEqual(self.ep.loc["m5-p1", "exit_type"], "right_censored")
+        self.assertEqual(self.ep.loc["m8-p1", "exit_type"], "host_change")
+
+    def test_y24_bounds(self):
+        e = self.ep
+        self.assertEqual((e.loc["m1-p1", "y24_lower"], e.loc["m1-p1", "y24_upper"]), (1, 1))
+        self.assertEqual((e.loc["m2-p1", "y24_lower"], e.loc["m2-p1", "y24_upper"]), (0, 0))
+        self.assertEqual(e.loc["m5-p1", "y24_lower"], 0)
+        self.assertTrue(pd.isna(e.loc["m5-p1", "y24_upper"]))
+        self.assertTrue(pd.isna(e.loc["m6-p1", "y24_lower"]))  # inherited: claim year unobserved
+
+    def test_no_structural_flags_on_clean_fixture(self):
+        self.assertEqual(set(self.ep["checks"]), {""})
 
     def test_risk_years_stop_at_event(self):
         rs = brs.risk_set_years(self.ep.reset_index())
-        m1 = rs[rs["movement_id"] == "m1"]
+        m1 = rs[rs["episode_id"] == "m1-p1"]
         self.assertEqual(list(m1["year"]), [1970, 1971])
-        self.assertEqual(m1["event"].sum(), 1)
-        self.assertNotIn("m4", set(rs["movement_id"]))
+        self.assertNotIn("m4-p1", set(rs["episode_id"]))
 
     def test_flow_marks_unobservable_stages(self):
         ep = brs.add_weakness_stratum(self.ep.reset_index(), None)
         flow = brs.flow_table(ep)
-        self.assertTrue(str(flow.loc[0, "govt_awareness"]).startswith("NA:"))
-        self.assertEqual(int(flow.loc[0, "previolence_entries"]), 5)
+        row = flow[(flow["population"] == "primary_first_claim") & (flow["w_stratum"] == "all")].iloc[0]
+        self.assertTrue(str(row["govt_awareness"]).startswith("NA:"))
+        self.assertEqual(int(row["episodes"]), 6)  # m1 m2 m3 m5 m7-p1 m8
 
     def test_cif_sums_below_one(self):
         ep = brs.add_weakness_stratum(self.ep.reset_index(), None)
-        cif = brs.cumulative_incidence(ep)
-        last = cif[cif["w_stratum"] == "all"].iloc[-1]
-        self.assertLessEqual(last["cif_violence"] + last["cif_termination"], 1.0)
+        last = brs.cumulative_incidence(ep).iloc[-1]
+        self.assertLessEqual(last["cif_violence"] + last["cif_competing"], 1.0)
+
+    def test_gdp_override_and_no_imputation(self):
+        ep = self.ep.reset_index().assign(country_code=260)
+        gdp = pd.DataFrame({"country_code_cow": [255, 255], "year": [1990, 1969], "gdppc": [100.0, 50.0],
+                            "gdppc_maddison": [None, None]})
+        ov = [{"sdm_ccode": 260, "qog_ccodecow": 255, "from_year": 1991}]
+        out = brs.add_weakness_stratum(ep, gdp, ov).set_index("episode_id")
+        self.assertEqual(out.loc["m1-p1", "w_stratum"], "unknown")  # 1969 < override start
+        self.assertEqual(out.loc["m1-p1", "gdp_missing_reason"], "country_not_in_qog")
 
     def test_unconfirmed_source_refused(self):
         with self.assertRaises(SourceNotReady):
-            load_source("DATA_SDM")
+            load_source("DATA_ICI")
+
+
+class UcdpReconcileTests(unittest.TestCase):
+    def test_vintage_and_type_handling(self):
+        import ucdp_reconcile as ur
+        acd = pd.DataFrame({"conflict_id": [1, 1, 2, 3], "year": [1950, 1951, 1960, 1970],
+                            "type_of_conflict": [2, 3, 3, 4], "gwno": ["1", "1", "2", "3"],
+                            "side_b": "x", "territory_name": "t"})
+        f = ur.acd_first_years(acd, [3, 4]).set_index("conflict_id")
+        self.assertEqual(f.loc[1, "first_intrastate_year"], 1951)   # type changed 2 -> 3
+        self.assertEqual(f.loc[1, "first_year_any_type"], 1950)
+        onset = pd.DataFrame({"new_conflict_onset": [1, 1], "conflict_ids": ["1", "2 "], "year": [1951, 1961], "gwno": [1, 2]})
+        out = ur.compare(ur.onset_newconf(onset), f.reset_index(), "onset_year", "first_intrastate_year", "on", "acd")
+        st = out.set_index("conflict_id")["status"]
+        self.assertEqual(st[1], "agree")
+        self.assertEqual(st[2], "year_mismatch")
+        self.assertEqual(st[3], "only_in_acd")
+
+    def test_non_numeric_ids_refused(self):
+        import ucdp_reconcile as ur
+        with self.assertRaises(ValueError):
+            ur.onset_newconf(pd.DataFrame({"new_conflict_onset": [1], "conflict_ids": ["1-99"], "year": [1966], "gwno": [750]}))
+
+
+class LinkTests(unittest.TestCase):
+    def test_corrupted_old_ids_flagged_and_country_checked(self):
+        import sdm_ucdp_link as sl
+        sdm = pd.DataFrame({"movement_id": [1, 2], "movement_name": ["A", "B"], "country_name": ["India", "Iran"],
+                            "ucdp_conflictid_old": ["Jan 99", "1-6"], "ucdp_territoryname": ["Mizoram", "Kurdistan"],
+                            "year": [1966, 1946], "active": [1, 1], "ucdp_terrconflict": [1, 1]})
+        acd = pd.DataFrame({"conflict_id": [296, 271], "territory_name": ["Mizoram", "Kurdistan"], "location": ["India", "Iraq"],
+                            "year": [1966, 1961], "type_of_conflict": [3, 3], "incompatibility": [1, 1]})
+        out = sl.candidates(sdm, acd).set_index("movement_name")
+        self.assertFalse(out.loc["A", "old_id_wellformed"])
+        self.assertEqual(out.loc["A", "candidate_status"], "territory_and_country_match")
+        self.assertEqual(out.loc["B", "candidate_status"], "territory_match_country_differs")
+        self.assertEqual(set(out["review_status"]), {"unreviewed"})
 
 
 class PilotDrawTests(unittest.TestCase):

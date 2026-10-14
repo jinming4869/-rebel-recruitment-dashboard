@@ -1,0 +1,21 @@
+{
+  "_doc": "Within-country pilot frames (WITHIN_COUNTRY_DESIGN.md, handoff 2026-10-14). For each country-period, src/build_pilot_frame.py lists EVERY SDM episode active in the window, before any outcome narrative is read, so outcome cannot decide entry. 'role' is the design role of the frame, not a verdict.",
+  "frames": [
+    {"frame_id": "IND_NE_1960_1972", "country_code": 750, "window": [1960, 1972],
+     "region_filter": ["Mizos", "Meghalayans", "Mikirs (Karbi)", "Kuki", "Nagas", "Tripuris", "Bodos", "Manipuri"],
+     "role": "primary archival pilot: Assam hill movements under the same central cabinet",
+     "government_levels": ["Government of India (PM, Home Ministry, IB)", "Government of Assam (Chief Minister, Governor)"]},
+    {"frame_id": "PAK_1971_1977", "country_code": 770, "window": [1971, 1977],
+     "region_filter": null,
+     "role": "replication / reputation probe (secondary populations only: claims inherited from colonial period)",
+     "government_levels": ["Federal government (Bhutto)", "Provincial governments (NAP-JUI in Balochistan and NWFP until 1973)"]},
+    {"frame_id": "GBR_1966_1972", "country_code": 200, "window": [1966, 1972],
+     "region_filter": null,
+     "role": "hard negative / measurement test (strong state; London vs Stormont principals)",
+     "government_levels": ["UK Cabinet / Home Office", "Northern Ireland (Stormont) government"]},
+    {"frame_id": "PHL_1966_1972", "country_code": 840, "window": [1966, 1972],
+     "region_filter": null,
+     "role": "additional positive candidate (Moro claim 1968, first violence 1970); 2008 MOA-AD is a separate rival-mechanism check, not an onset case",
+     "government_levels": ["Marcos administration"]}
+  ]
+}

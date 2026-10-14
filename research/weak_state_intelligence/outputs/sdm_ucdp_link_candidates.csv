@@ -1,0 +1,132 @@
+sdm_movement_id,movement_name,country,sdm_old_ucdp_id,old_id_wellformed,sdm_territory,sdm_active_years_with_link,sdm_years_coded_ucdp_terrconflict,ucdp26_conflict_id,acd_territory,acd_location,acd_years,acd_n_years,candidate_status,review_status
+530080,Western Somalis,Ethiopia,1-261; 1-133,False,"Arssi, Bale & Sidamo; Ogaden",1977-1980,4,,,,,,no_territory_match,unreviewed
+750120,Kuki,India,1-263,True,Kukiland,1997-1997,1,,,,,,no_territory_match,unreviewed
+435020,Saharawis,Mauritania,1-253,True,Western Sahara,1975-1978,4,,,,,,no_territory_match,unreviewed
+600020,Saharawis,Morocco,1-135,True,Western Sahara,1975-1989,15,,,,,,no_territory_match,unreviewed
+365120,Chechens,Russia (USSR),1-206; 1-257,False,Chechen Republic of Ichkeria; Caucasus Emirate,2007-2007,1,,,,,,no_territory_match,unreviewed
+540020,Cabindans,Angola,1-192,True,Cabinda,1991-2009,9,387.0,Cabinda,Angola,1991-2025,19.0,territory_and_country_match,unreviewed
+771010,Chittagong Hills People,Bangladesh,1-126,True,Chittagong Hill Tracts,1975-1991,17,322.0,Chittagong Hill Tracts,Bangladesh,1975-1991,17.0,territory_and_country_match,unreviewed
+346010,Bihacs (Western Bosniaks),Bosnia,1-202,True,Bihaca Krajina,1993-1995,3,397.0,Bihaca Krajina,Bosnia-Herzegovina,1993-1995,3.0,territory_and_country_match,unreviewed
+346020,Bosnian Croats,Bosnia,1-203,True,Croat,1993-1994,2,398.0,Croat,Bosnia-Herzegovina,1992-1994,3.0,territory_and_country_match,unreviewed
+346030,Bosnian Serbs,Bosnia,1-194,True,Serb,1992-1995,4,389.0,Serb,Bosnia-Herzegovina,1992-1995,4.0,territory_and_country_match,unreviewed
+710040,Tibetans,China,Jan 39,False,Tibet,1950-1959,3,236.0,Tibet,China,1950-1959,3.0,territory_and_country_match,unreviewed
+710050,Uyghurs,China,1-273,True,East Turkestan,2008-2008,1,11349.0,"East Turkestan
+",China,2008-2008,1.0,territory_and_country_match,unreviewed
+581010,Anjouanese,Comoros,1-213,True,Anjouan,1997-1997,1,407.0,Anjouan,Comoros,1997-1997,1.0,territory_and_country_match,unreviewed
+490010,Bakongo,Congo-Zaire,1-254,True,Kongo Kingdom,2007-2008,2,429.0,Kongo Kingdom,DR Congo (Zaire),2007-2020,4.0,territory_and_country_match,unreviewed
+490020,Katangans (Lunda and Yeke),Congo-Zaire,Jan 68,False,Katanga,1961-1962,2,265.0,Katanga,DR Congo (Zaire),1961-2020,5.0,territory_and_country_match,unreviewed
+490030,Luba,Congo-Zaire,Jan 69,False,South Kasai,1960-1962,3,266.0,South Kasai,DR Congo (Zaire),1960-1962,3.0,territory_and_country_match,unreviewed
+344010,Croatian Serbs,Croatia,1-195,True,Serb,1992-1995,3,390.0,Serb,Croatia,1992-1995,4.0,territory_and_country_match,unreviewed
+530010,Afars,Ethiopia,1-168,True,Afar,1975-1996,3,363.0,Afar,Ethiopia,1975-1996,3.0,territory_and_country_match,unreviewed
+530040,Eritreans,Ethiopia,Jan 78,False,Eritrea,1964-1991,28,275.0,Eritrea,Ethiopia,1964-1991,28.0,territory_and_country_match,unreviewed
+530050,Oromos,Ethiopia,1-219,True,Oromiya,1977-2012,31,413.0,Oromiya,Ethiopia,1977-2025,41.0,territory_and_country_match,unreviewed
+530060,Sidama,Ethiopia,1-262,True,Sidamaland,1983-1983,1,437.0,Sidamaland,Ethiopia,1981-1983,2.0,territory_and_country_match,unreviewed
+530080,Western Somalis,Ethiopia,1-133,True,Ogaden,1964-2012,23,329.0,Ogaden,Ethiopia,1964-2016,31.0,territory_and_country_match,unreviewed
+530080,Western Somalis,Ethiopia,1-268,True,Hararghe,1991-1991,1,11447.0,Hararghe,Ethiopia,1991-1991,1.0,territory_and_country_match,unreviewed
+372010,Abkhaz,Georgia,1-197,True,Abkhazia,1992-1993,2,392.0,Abkhazia,Georgia,1992-1993,2.0,territory_and_country_match,unreviewed
+372040,South Ossetians,Georgia,1-198,True,South Ossetia,1992-2008,3,393.0,South Ossetia,Georgia,1992-2008,3.0,territory_and_country_match,unreviewed
+750010,Achiks (Garos),India,1-272,True,Garoland,2012-2012,1,11342.0,Garoland,India,2012-2014,2.0,territory_and_country_match,unreviewed
+750020,Assamese,India,1-170,True,Assam,1990-2010,19,365.0,Assam,India,1990-2010,18.0,territory_and_country_match,unreviewed
+750030,Bodos,India,1-227,True,Bodoland,1989-2010,16,421.0,Bodoland,India,1989-2014,15.0,territory_and_country_match,unreviewed
+750090,Kashmiri Muslims,India,1-169,True,Kashmir,1989-2012,24,364.0,Kashmir,India,1990-2025,36.0,territory_and_country_match,unreviewed
+750130,Manipuri,India,1-152,True,Manipur,1982-2009,23,347.0,Manipur,India,1982-2009,21.0,territory_and_country_match,unreviewed
+750170,Mizos,India,Jan 99,False,Mizoram,1966-1968,3,296.0,Mizoram,India,1966-1968,3.0,territory_and_country_match,unreviewed
+750180,Nagas,India,Jan 54,False,Nagaland,1956-2000,19,251.0,Nagaland,India,1956-2000,19.0,territory_and_country_match,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,434.0,Islamic State,India,2008-2008,1.0,territory_and_country_match,unreviewed
+750240,Sikhs,India,1-156,True,Punjab/Khalistan,1983-1993,11,351.0,Punjab/Khalistan,India,1983-1993,11.0,territory_and_country_match,unreviewed
+750290,Tripuris,India,1-139,True,Tripura,1979-2006,22,335.0,Tripura,India,1979-2004,18.0,territory_and_country_match,unreviewed
+850010,Acehnese,Indonesia,1-171,True,Aceh,1990-2005,9,366.0,Aceh,Indonesia,1990-2005,9.0,territory_and_country_match,unreviewed
+850030,East Timorese,Indonesia,1-134,True,East Timor,1975-1998,18,330.0,East Timor,Indonesia,1975-1999,18.0,territory_and_country_match,unreviewed
+850060,Papuans,Indonesia,Jan 94,False,West Papua,1965-1984,9,291.0,West Papua,Indonesia,1965-2025,17.0,territory_and_country_match,unreviewed
+850070,South Moluccans (Ambonese),Indonesia,Jan 40,False,South Moluccas,1950-1950,1,237.0,South Moluccas,Indonesia,1950-1950,1.0,territory_and_country_match,unreviewed
+630010,Arabs (Arabistanis),Iran,1-144,True,Arabistan,1979-1980,2,339.0,Arabistan,Iran,1979-1980,2.0,territory_and_country_match,unreviewed
+630020,Azerbaijanis,Iran,01. Jul,False,Azerbaijan,1946-1946,1,206.0,Azerbaijan,Iran,1946-1946,1.0,territory_and_country_match,unreviewed
+630050,Kurds,Iran,01. Jun,False,Kurdistan,1946-1996,17,205.0,Kurdistan,Iran,1946-2018,19.0,territory_and_country_match,unreviewed
+645020,Kurds,Iraq,Jan 74,False,Kurdistan,1961-1996,32,271.0,Kurdistan,Iraq,1961-1996,32.0,territory_and_country_match,unreviewed
+666010,Palestinians,Israel,Jan 37,False,Palestine,1963-2012,47,234.0,Palestine,Israel,1949-2025,69.0,territory_and_country_match,unreviewed
+432010,Tuaregs,Mali,1-177,True,Azawad,1990-2012,6,372.0,Azawad,Mali,1990-2015,9.0,territory_and_country_match,unreviewed
+359020,Trans-Dniester Slavs,Moldova,1-199,True,Dniestr,1992-1992,1,394.0,Dniestr,Moldova,1992-1992,1.0,territory_and_country_match,unreviewed
+775010,Buddhist Arakanese,Myanmar,Jan 25,False,Arakan,1948-1973,20,223.0,Arakan,Myanmar (Burma),1948-2025,40.0,territory_and_country_match,unreviewed
+775020,Kachins,Myanmar,Jan 34,False,Kachin,1949-2012,36,231.0,Kachin,Myanmar (Burma),1949-2025,48.0,territory_and_country_match,unreviewed
+775030,Karenni (Kayah),Myanmar,Jan 56,False,Karenni,1957-2005,5,253.0,Karenni,Myanmar (Burma),1957-2025,10.0,territory_and_country_match,unreviewed
+775040,Karens,Myanmar,Jan 23,False,Karen,1949-2011,60,221.0,Karen,Myanmar (Burma),1949-2025,66.0,territory_and_country_match,unreviewed
+775050,Kokang,Myanmar,1-264,True,Kokang,2009-2009,1,439.0,Kokang,Myanmar (Burma),2009-2024,7.0,territory_and_country_match,unreviewed
+775060,Lahu,Myanmar,1-265,True,Lahu,1973-1982,10,440.0,Lahu,Myanmar (Burma),1973-1982,10.0,territory_and_country_match,unreviewed
+775070,Mons,Myanmar,Jan 26,False,Mon,1949-1996,17,224.0,Mon,Myanmar (Burma),1949-1996,17.0,territory_and_country_match,unreviewed
+775080,Nagas,Myanmar,1-277,True,Nagaland,2000-2007,5,11475.0,Nagaland,Myanmar (Burma),1991-2007,7.0,territory_and_country_match,unreviewed
+775110,Rohingyas (Arakanese),Myanmar,Jan 25,False,Arakan,1948-1994,22,223.0,Arakan,Myanmar (Burma),1948-2025,40.0,territory_and_country_match,unreviewed
+775120,Shan,Myanmar,Jan 67,False,Shan,1959-2011,44,264.0,Shan,Myanmar (Burma),1959-2015,46.0,territory_and_country_match,unreviewed
+775130,Wa,Myanmar,1-228,True,Wa,1997-1997,1,422.0,Wa,Myanmar (Burma),1997-1997,1.0,territory_and_country_match,unreviewed
+436010,Toubou,Niger,1-212,True,Eastern Niger,1995-1995,1,406.0,Eastern Niger,Niger,1995-1995,1.0,territory_and_country_match,unreviewed
+436020,Tuaregs,Niger,1-178,True,Air and Azawad,1994-1994,1,373.0,Air and Azawad,Niger,1994-1994,1.0,territory_and_country_match,unreviewed
+475050,Ibos (Biafrans),Nigeria,1-107,True,Biafra,1967-1970,4,303.0,Biafra,Nigeria,1967-2025,9.0,territory_and_country_match,unreviewed
+475060,Ijaw,Nigeria,1-250,True,Niger Delta,2004-2004,1,425.0,Niger Delta,Nigeria,2004-2004,1.0,territory_and_country_match,unreviewed
+475090,Northerners,Nigeria,1-249,True,Northern Nigeria,2004-2004,1,424.0,Northern Nigeria,Nigeria,2004-2004,1.0,territory_and_country_match,unreviewed
+770010,Baluchis,Pakistan,1-129,True,Balochistan,1974-2012,11,325.0,Balochistan,Pakistan,1974-2025,22.0,territory_and_country_match,unreviewed
+770020,Bengalis,Pakistan,1-116,True,East Pakistan,1971-1971,1,312.0,East Pakistan,Pakistan,1971-1971,1.0,territory_and_country_match,unreviewed
+910010,Bougainvilleans,Papua New Guinea,1-174,True,Bougainville,1990-1996,6,369.0,Bougainville,Papua New Guinea,1990-1996,6.0,territory_and_country_match,unreviewed
+840020,Moros,Philippines,1-112,True,Mindanao,1970-2012,41,308.0,Mindanao,Philippines,1970-2020,49.0,territory_and_country_match,unreviewed
+365050,Armenians,Russia (USSR),1-181,True,Nagorno-Karabakh,1990-1991,2,376.0,Nagorno-Karabakh,Russia (Soviet Union),1990-1991,2.0,territory_and_country_match,unreviewed
+365070,Azerbaijanis,Russia (USSR),1-182,True,Azerbaijan,1990-1990,1,377.0,Azerbaijan,Russia (Soviet Union),1990-1990,1.0,territory_and_country_match,unreviewed
+365120,Chechens,Russia (USSR),1-206,True,Chechnya,1994-2006,11,401.0,Chechnya,Russia (Soviet Union),1994-2007,12.0,territory_and_country_match,unreviewed
+365120,Chechens,Russia (USSR),1-257,True,Caucasus Emirate,2008-2012,5,432.0,Caucasus Emirate,Russia (Soviet Union),2007-2015,9.0,territory_and_country_match,unreviewed
+365170,Dagestanis,Russia (USSR),1-220,True,Dagestan,1999-1999,1,414.0,Dagestan,Russia (Soviet Union),1999-1999,1.0,territory_and_country_match,unreviewed
+365170,Dagestanis,Russia (USSR),1-257,True,Caucasus Emirate,2007-2012,6,432.0,Caucasus Emirate,Russia (Soviet Union),2007-2015,9.0,territory_and_country_match,unreviewed
+365190,Estonians,Russia (USSR),01. Nov,False,Estonia,1946-1948,3,210.0,Estonia,Russia (Soviet Union),1946-1948,3.0,territory_and_country_match,unreviewed
+365260,Ingush,Russia (USSR),1-257,True,Caucasus Emirate,2007-2012,6,432.0,Caucasus Emirate,Russia (Soviet Union),2007-2015,9.0,territory_and_country_match,unreviewed
+365430,Latvians,Russia (USSR),01. Dez,False,Latvia,1946-1946,1,211.0,Latvia,Russia (Soviet Union),1946-1946,1.0,territory_and_country_match,unreviewed
+365460,Lithuanians,Russia (USSR),Jan 13,False,Lithuania,1946-1948,3,212.0,Lithuania,Russia (Soviet Union),1946-1948,3.0,territory_and_country_match,unreviewed
+365640,Ukrainians,Russia (USSR),Jan 14,False,Ukraine,1946-1950,5,213.0,Ukraine,Russia (Soviet Union),1946-1950,5.0,territory_and_country_match,unreviewed
+433010,Casamancais,Senegal,1-180,True,Casamance,1990-2011,10,375.0,Casamance,Senegal,1990-2011,9.0,territory_and_country_match,unreviewed
+560040,Namibians,South Africa,1-101,True,Namibia,1966-1988,23,298.0,Namibia,South Africa,1966-1989,24.0,territory_and_country_match,unreviewed
+230060,Basques,Spain,1-147,True,Basque,1978-1991,9,342.0,Basque,Spain,1978-1991,9.0,territory_and_country_match,unreviewed
+780020,Tamils,Sri Lanka,1-157,True,Eelam,1984-2009,24,352.0,Eelam,Sri Lanka,1984-2009,24.0,territory_and_country_match,unreviewed
+625030,Southerners,Sudan,1-269,True,Abyei,2011-2011,1,11344.0,Abyei,Sudan,2011-2011,1.0,territory_and_country_match,unreviewed
+625030,Southerners,Sudan,Jan 85,False,Southern Sudan,1963-1972,10,282.0,Southern Sudan,Sudan,1963-1972,10.0,territory_and_country_match,unreviewed
+800010,Muslims (Malays or Pattani),Thailand,1-248,True,Patani,2003-2012,10,423.0,Patani,Thailand,2003-2025,23.0,territory_and_country_match,unreviewed
+640010,Kurds,Turkey,1-159,True,Kurdistan,1984-2012,29,354.0,Kurdistan,Turkey,1984-2025,41.0,territory_and_country_match,unreviewed
+200010,Catholics in Northern Ireland,United Kingdom,1-119,True,Northern Ireland,1971-1998,22,315.0,Northern Ireland,United Kingdom,1971-1998,22.0,territory_and_country_match,unreviewed
+679010,South Yemenis,Yemen,1-207,True,South Yemen,1994-1994,1,402.0,South Yemen,Yemen (North Yemen),1994-2025,2.0,territory_and_country_match,unreviewed
+345020,Croats,Yugoslavia,1-190,True,Croatia,1991-1991,1,385.0,Croatia,Serbia (Yugoslavia),1991-1992,2.0,territory_and_country_match,unreviewed
+345050,Kosovar Albanians,Yugoslavia,1-218,True,Kosovo,1998-1999,2,412.0,Kosovo,Serbia (Yugoslavia),1998-1999,2.0,territory_and_country_match,unreviewed
+345100,Slovenes,Yugoslavia,1-189,True,Slovenia,1991-1991,1,384.0,Slovenia,Serbia (Yugoslavia),1991-1991,1.0,territory_and_country_match,unreviewed
+373010,Armenians,Azerbaijan,1-193,True,Nagorno-Karabakh,1991-2012,6,376.0,Nagorno-Karabakh,Russia (Soviet Union),1990-1991,2.0,territory_match_country_differs,unreviewed
+346030,Bosnian Serbs,Bosnia,1-194,True,Serb,1992-1995,4,390.0,Serb,Croatia,1992-1995,4.0,territory_match_country_differs,unreviewed
+344010,Croatian Serbs,Croatia,1-195,True,Serb,1992-1995,3,389.0,Serb,Bosnia-Herzegovina,1992-1995,4.0,territory_match_country_differs,unreviewed
+750180,Nagas,India,Jan 54,False,Nagaland,1956-2000,19,11475.0,Nagaland,Myanmar (Burma),1991-2007,7.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13588.0,Islamic State,Russia (Soviet Union),2015-2024,7.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13604.0,Islamic State,Syria,2013-2025,13.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13637.0,Islamic State,Afghanistan,2015-2025,11.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13638.0,Islamic State,Cameroon,2015-2025,6.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13639.0,Islamic State,Niger,2015-2025,11.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13640.0,Islamic State,Chad,2015-2022,7.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13641.0,Islamic State,Nigeria,2015-2025,11.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13645.0,Islamic State,Yemen (North Yemen),2015-2020,3.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13648.0,Islamic State,Egypt,2015-2022,8.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13674.0,Islamic State,Bangladesh,2016-2017,2.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13675.0,Islamic State,Lebanon,2014-2017,3.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13694.0,Islamic State,Libya,2015-2019,5.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13721.0,Islamic State,Algeria,2015-2015,1.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13840.0,Islamic State,Burkina Faso,2019-2025,7.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13886.0,Islamic State,Jordan,2016-2016,1.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13902.0,Islamic State,Turkey,2015-2017,3.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,13936.0,Islamic State,Pakistan,2016-2025,8.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,14113.0,Islamic State,Mali,2017-2025,9.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,14197.0,Islamic State,Somalia,2019-2025,4.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,14268.0,Islamic State,Iran,2017-2017,1.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,14275.0,Islamic State,Philippines,2016-2024,9.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,14333.0,Islamic State,Tunisia,2016-2016,1.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,14692.0,Islamic State,DR Congo (Zaire),2017-2025,9.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,14845.0,Islamic State,Mozambique,2019-2025,7.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,15183.0,Islamic State,Tanzania,2020-2020,1.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,15438.0,Islamic State,Uganda,2022-2022,1.0,territory_match_country_differs,unreviewed
+750190,Pangals,India,1-259,True,Islamic State,2008-2008,1,16292.0,Islamic State,Tajikistan,2018-2019,2.0,territory_match_country_differs,unreviewed
+630020,Azerbaijanis,Iran,01. Jul,False,Azerbaijan,1946-1946,1,377.0,Azerbaijan,Russia (Soviet Union),1990-1990,1.0,territory_match_country_differs,unreviewed
+630050,Kurds,Iran,01. Jun,False,Kurdistan,1946-1996,17,271.0,Kurdistan,Iraq,1961-1996,32.0,territory_match_country_differs,unreviewed
+630050,Kurds,Iran,01. Jun,False,Kurdistan,1946-1996,17,354.0,Kurdistan,Turkey,1984-2025,41.0,territory_match_country_differs,unreviewed
+645020,Kurds,Iraq,Jan 74,False,Kurdistan,1961-1996,32,205.0,Kurdistan,Iran,1946-2018,19.0,territory_match_country_differs,unreviewed
+645020,Kurds,Iraq,Jan 74,False,Kurdistan,1961-1996,32,354.0,Kurdistan,Turkey,1984-2025,41.0,territory_match_country_differs,unreviewed
+775080,Nagas,Myanmar,1-277,True,Nagaland,2000-2007,5,251.0,Nagaland,India,1956-2000,19.0,territory_match_country_differs,unreviewed
+365070,Azerbaijanis,Russia (USSR),1-182,True,Azerbaijan,1990-1990,1,206.0,Azerbaijan,Iran,1946-1946,1.0,territory_match_country_differs,unreviewed
+640010,Kurds,Turkey,1-159,True,Kurdistan,1984-2012,29,205.0,Kurdistan,Iran,1946-2018,19.0,territory_match_country_differs,unreviewed
+640010,Kurds,Turkey,1-159,True,Kurdistan,1984-2012,29,271.0,Kurdistan,Iraq,1961-1996,32.0,territory_match_country_differs,unreviewed

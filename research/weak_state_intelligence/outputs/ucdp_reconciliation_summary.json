@@ -1,0 +1,21 @@
+{
+  "A_onset25_vs_acd25": {
+    "agree": 230
+  },
+  "B_acd25_vs_acd26": {
+    "agree": 229,
+    "only_in_acd_25_1": 1
+  },
+  "C_country_onset25_vs_acd25_first_years": {
+    "onset_file_only": 159,
+    "agree": 147,
+    "acd_only": 64
+  },
+  "acd26_conflicts_first_intrastate_2025": 0,
+  "conflicts_changing_type_acd26": 0,
+  "onset_conflict_file_newconf_rows": 230,
+  "onset_country_file_newconf_rows": 306,
+  "country_file_newconf_identical_to_onset1": true,
+  "C_acd_only_with_conflict_in_prior_year": "64 of 64",
+  "interpretation": "A: same-vintage conflict-level onsets agree with ACD 25.1. B: one 2024 conflict (Jubaland) is dropped in 26.1. C: in the country-level file newconf equals onset1 row-for-row, i.e. it marks every country onset after >=1 peace year (including restarts), contrary to the codebook's 'new conflict' wording; ACD-only rows are new IDs starting while another conflict was ongoing, which version 2 excludes by design. Use the conflict-level file for 'new conflict' and never read country-file newconf as first-ever conflict."
+}

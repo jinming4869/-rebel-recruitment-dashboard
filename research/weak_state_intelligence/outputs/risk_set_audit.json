@@ -1,0 +1,55 @@
+{
+  "rows": 18976,
+  "movements": 464,
+  "active_rows": 13988,
+  "first_row_inactive_lookback": 464,
+  "movements_with_phase2": 36,
+  "prioract_counts": {
+    "0": 355,
+    "1": 18,
+    "2": 61,
+    "3": 30
+  },
+  "episodes_by_population": {
+    "primary_first_claim": 319,
+    "inherited_claim": 109,
+    "violent_in_claim_year": 36,
+    "resumed_claim": 36
+  },
+  "episodes_with_checks": [],
+  "sdm_onsets_total": 217,
+  "sdm_onsets_that_are_first_in_primary": 54,
+  "old_rule_entry_year_error_years_median": 10.0,
+  "w_median_log_gdppc": 8.52581213806709,
+  "w_median_log_gdppc_mad": 9.03385851450542,
+  "primary_gdp_missing_reasons": {
+    "observed": 166,
+    "wdi_value_missing_for_country_year": 102,
+    "before_wdi_coverage_1960": 43,
+    "country_not_in_qog": 8
+  },
+  "primary_gdp_missing_countries_1961_2012": {
+    "Russia (USSR)": 64,
+    "Yugoslavia": 10,
+    "Ukraine": 4,
+    "Czechoslovakia": 3,
+    "Ethiopia": 2,
+    "Pakistan": 2,
+    "Kazakhstan": 2,
+    "Estonia": 1,
+    "Azerbaijan": 1,
+    "Antigua & Barbuda": 1,
+    "Algeria": 1,
+    "Cyprus": 1,
+    "Namibia": 1,
+    "France": 1,
+    "Romania": 1,
+    "Poland": 1,
+    "Suriname": 1,
+    "Taiwan": 1,
+    "Tanzania": 1,
+    "Tajikistan": 1,
+    "Uganda": 1,
+    "Yemen": 1
+  }
+}

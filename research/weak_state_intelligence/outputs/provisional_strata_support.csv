@@ -1,0 +1,14 @@
+infcap_stratum,milpercap_stratum,escalation_stratum,episodes,countries,note
+high,high,non_escalating,11,8,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+high,low,escalating,1,1,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+high,low,non_escalating,7,4,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+low,high,escalating,4,4,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+low,high,non_escalating,54,16,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+low,low,escalating,8,4,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+low,low,non_escalating,37,15,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+unknown,high,escalating,3,3,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+unknown,high,non_escalating,21,8,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+unknown,low,escalating,10,8,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+unknown,low,non_escalating,31,16,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+unknown,unknown,escalating,11,7,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force
+unknown,unknown,non_escalating,73,10,PROVISIONAL national proxies (Hanson-Sigman 1960-2015); not challenger-specific information or local force

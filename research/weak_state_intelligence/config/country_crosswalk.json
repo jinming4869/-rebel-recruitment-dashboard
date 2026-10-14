@@ -1,0 +1,12 @@
+{
+  "_doc": "Explicit, reviewed exceptions for joining SDM ccode (COW-style) to QoG ccodecow. Default rule: equal codes AND the per-code name check in outputs/country_crosswalk_audit.csv. Anything not covered stays unmatched (GDP stratum 'unknown'); nothing is imputed.",
+  "reviewed_on": "2026-10-14",
+  "overrides": [
+    {"sdm_ccode": 260, "sdm_country": "Germany", "qog_ccodecow": 255, "from_year": 1991,
+     "reason": "QoG codes unified Germany 255 from 1991; West Germany (COW 260) has no QoG row before 1991, so 1949-1990 stays unmatched."}
+  ],
+  "known_unmatched": [
+    {"sdm_ccode": 347, "sdm_country": "Kosovo", "reason": "No QoG ccodecow for Kosovo."},
+    {"sdm_ccode": 817, "sdm_country": "South Vietnam", "reason": "No QoG row for the Republic of Vietnam."}
+  ]
+}
